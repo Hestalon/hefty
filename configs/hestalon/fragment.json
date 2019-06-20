@@ -1,0 +1,11 @@
+{
+  "Maps": {
+    "priority": 800,
+    "class": "Fragments",
+    "section": {
+      "Fragments": {
+        "theme": "fragment"
+      }
+    }
+  }
+}

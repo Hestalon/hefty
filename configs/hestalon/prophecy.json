@@ -1,0 +1,38 @@
+{
+  "Prophecy": {
+    "priority": 300,
+    "class": "Currency",
+    "type": "Prophecy",
+    "section": {
+      "T3": {
+        "theme": "prophecy-t3",
+        "prophecy": [
+          "Fated Connections",
+          "Monstrous Treasure",
+          "The Queen's Sacrifice",
+          "Trash or Treasure"
+        ]
+      },
+      "T2": {
+        "theme": "prophecy-t2",
+        "prophecy": [
+          "A Vision of Ice and Fire",
+          "Cleanser of Sins",
+          "Darktongue's Shriek",
+          "The Feral Lord V",
+          "The Jeweller's Touch",
+          "The King's Path",
+          "The Plaguemaw V",
+          "The Unbreathing Queen V",
+          "Twice Enchanted",
+          "Unbearable Whispers V",
+          "Vaal Winds",
+          "Wind and Thunder"
+        ]
+      },
+      "T1": {
+        "theme": "prophecy-t1"
+      }
+    }
+  }
+}

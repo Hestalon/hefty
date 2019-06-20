@@ -1,0 +1,15 @@
+{
+  "Splinter": {
+    "priority": 800,
+    "class": "Currency",
+    "theme": "splinter",
+    "section": {
+      "Legion": {
+        "type" : "Timeless"
+      },
+      "Breach" : {
+        "type": "Splinter of"
+      }
+    }
+  }
+}

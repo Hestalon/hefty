@@ -1,0 +1,46 @@
+{
+  "currency-common-t6": {
+    "extends": [
+      "currency-common-t5"
+    ],
+    "background": "255 255 255 255",
+    "sound": "6 300",
+    "size": 45
+  },
+  "currency-common-t5": {
+    "extends": [
+      "currency-common-t4"
+    ]
+  },
+  "currency-common-t4": {
+    "extends": [
+      "currency-common-t3"
+    ],
+    "background": "125 125 125 255",
+    "beam": "Yellow",
+    "icon": "2 Yellow Circle",
+    "size": 40
+  },
+  "currency-common-t3": {
+    "extends": [
+      "currency-common-t2"
+    ]
+  },
+  "currency-common-t2": {
+    "extends": [
+      "currency-common-t1"
+    ],
+    "size": 35
+  },
+  "currency-common-t1": {
+    "extends": [
+      "currency"
+    ]
+  },
+  "currency": {
+    "text": "255 190 20 255",
+    "border": "255 190 20 255",
+    "background": "0 0 0 0",
+    "dropSound": true
+  }
+}

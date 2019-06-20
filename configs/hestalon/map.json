@@ -1,0 +1,32 @@
+{
+  "Maps": {
+    "priority": 300,
+    "class": "Maps",
+    "section": {
+      "T11+": {
+        "theme": "map-t11+",
+        "tier": ">= 11"
+      },
+      "T6+": {
+        "theme": "map-t6+",
+        "tier": ">= 6"
+      },
+      "T1+": {
+        "theme": "map-t1+",
+        "tier": ">= 1"
+      },
+      "Unique": {
+        "theme": "map-unique",
+        "rarity": "Unique"
+      },
+      "Labyrinth": {
+        "theme": "map-lab",
+        "class": "Labyrinth"
+      },
+      "Fragments": {
+        "theme": "map-fragment",
+        "class": "Map Fragments"
+      }
+    }
+  }
+}

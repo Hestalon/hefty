@@ -1,0 +1,20 @@
+{
+  "gems-drop-valuable": {
+    "extends": "gems-drop"
+  },
+  "gems-drop" : {
+    "extends": "gems",
+    "background": "255 255 255 255 255"
+  },
+   "gems-quality": {
+     "extends": "gems",
+    "text": "0 190 20 255",
+    "border": "0 190 20 255",
+    "background": "255 255 255 255"
+  },
+  "gems": {
+    "text": "0 190 20 255",
+    "border": "0 190 20 255",
+    "background": "0 0 0 0"
+  }
+}

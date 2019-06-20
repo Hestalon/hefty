@@ -1,0 +1,80 @@
+{
+  "Currency common": {
+    "priority": 200,
+    "class": "Currency",
+    "section": {
+      "T6": {
+        "theme": "currency-common-t6",
+        "type": [
+          "Albino Rhoa Feather",
+          "Eternal Orb",
+          "Exalted Orb",
+          "Mirror of Kalandra",
+          "Mirror Shard",
+          "Ancient Orb",
+          "Divine Orb",
+          "Harbinger's Orb",
+          "Orb of Annulment"
+        ]
+      },
+      "T5": {
+        "theme": "currency-common-t5",
+        "type": [
+          "Journeyman Cartographer's Sextant",
+          "Master Cartographer's Sextant",
+          "Apprentice Cartographer's Sextant",
+          "Chaos Orb",
+          "Engineer's Orb",
+          "Gemcutter's Prism",
+          "Orb of Regret",
+          "Regal Orb",
+          "Stacked Deck",
+          "Vaal Orb"
+        ]
+      },
+      "T4": {
+        "theme": "currency-common-t4",
+        "type": [
+          "Bestiary Orb",
+          "Blessed Orb",
+          "Cartographer's Chisel",
+          "Orb of Alchemy",
+          "Orb of Binding",
+          "Orb of Fusing",
+          "Orb of Horizons",
+          "Orb of Scouring"
+        ]
+      },
+      "T3": {
+        "theme": "currency-common-t3",
+        "type": [
+          "Silver Coin",
+          "Chromatic Orb",
+          "Glassblower's Bauble",
+          "Jeweller's Orb",
+          "Orb of Alteration",
+          "Orb of Chance"
+        ]
+      },
+      "T2": {
+        "theme": "currency-common-t2",
+        "type": [
+          "Alchemy Shard",
+          "Blacksmith's Whetstone",
+          "Orb of Augmentation",
+          "Orb of Transmutation"
+        ]
+      },
+      "T1": {
+        "theme": "currency-common-t1",
+        "type": [
+          "Alteration Shard",
+          "Armourer's Scrap",
+          "Transmutation Shard",
+          "Portal Scroll",
+          "Scroll of Wisdom"
+        ]
+      }
+    }
+  }
+}

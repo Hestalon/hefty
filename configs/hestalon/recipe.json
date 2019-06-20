@@ -1,0 +1,30 @@
+{
+  "Recipes": {
+    "priority": 400,
+    "socketColors": "RGB",
+    "section": {
+      "6 Link": {
+        "theme": "recipe-6link",
+        "links": "6"
+      },
+      "6 Socket": {
+        "theme": "recipe-6socket",
+        "sockets": "6"
+      },
+      "Chromatic 2x2": {
+        "theme" : "recipe-chromatic",
+        "width": 2,
+        "height": 2
+      },
+      "Chromatic 1x3 1x4": {
+        "theme" : "recipe-chromatic",
+        "width": 1,
+        "height": ">= 3"
+      },
+      "Chromatic leveling": {
+        "theme" : "recipe-chromatic",
+        "dropLevel" : "<= 65"
+      }
+    }
+  }
+}

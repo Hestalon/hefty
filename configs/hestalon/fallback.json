@@ -1,0 +1,14 @@
+{
+  "Fallback": {
+    "priority": 900,
+    "section": {
+      "Hide chunk": {
+        "theme": "chunk",
+        "show": false
+      },
+      "Fallback": {
+        "theme": "fallback"
+      }
+    }
+  }
+}
