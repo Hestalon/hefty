@@ -1,6 +1,6 @@
 {
   "Prophecy": {
-    "priority": 300,
+    "priority": 3000,
     "class": "Currency",
     "type": "Prophecy",
     "section": {
@@ -10,7 +10,7 @@
           "Fated Connections",
           "Monstrous Treasure",
           "The Queen's Sacrifice",
-          "Trash or Treasure"
+          "Trash to Treasure"
         ]
       },
       "T2": {

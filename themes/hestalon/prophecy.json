@@ -1,15 +1,15 @@
 {
   "prophecy-t3": {
     "extends": "prophecy-t2",
-    "text": "255 255 255 255"
+    "border": "neutral-high"
   },
   "prophecy-t2": {
     "extends": "prophecy-t1",
-    "border": "255 255 255 255"
+    "border": "neutral-medium"
   },
   "prophecy-t1": {
-    "text": "0 0 0 255",
-    "background": "160 15 210 50",
-    "border": "0 0 0 255"
+    "text": "neutral-high",
+    "background": "prophecy",
+    "border": "neutral-low"
   }
 }

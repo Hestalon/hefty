@@ -1,11 +1,10 @@
 #! python3
 
-from argparse import ArgumentParser
 import json
 import os
 import re
-
-from typing import Text, TextIO, Union
+from argparse import ArgumentParser
+from typing import List, Text, TextIO, Union
 
 
 class Heft(object):
@@ -16,6 +15,7 @@ class Heft(object):
         self.themes: dict = dict()
         self.styles: dict = dict()
         self.filter_file: Union[TextIO, None] = None
+        self.matcher = re.compile('.*\\.json')
 
     def write_line(self, *text: Text) -> None:
         # write the text finished with a new line
@@ -27,18 +27,26 @@ class Heft(object):
     def format_comment(*text: Text) -> Text:
         return '# {}'.format(' '.join(text))
 
+    def write_comment(self, *text: Text) -> None:
+        self.write_line(self.format_comment(*text))
+
+    def write_comment_header(self, lines: List[List[Text]], separator: Text):
+        self.write_comment(separator * 120)
+        for line in lines:
+            self.write_comment(*line)
+        self.write_comment(separator * 120)
+
     @staticmethod
-    def add_entry(data: dict, name: Text, value: Union[Text, int, list],
-                  escape: bool = False) -> None:
+    def add_entry(data: dict, name: Text, value: Union[Text, int, List], escape: bool = False) -> None:
         if value is not None:
             # make it a list if not already
             if isinstance(value, Text) or isinstance(value, int):
                 value = [value]
-            # make sure everything is a str
-            value = map(str, value)
+            # make sure everything is text
+            value = map(Text, value)
             # escape if necessary
             if escape:
-                value = map(lambda x: '"{}"'.format(str(x)), value)
+                value = map(lambda x: '"{}"'.format(Text(x)), value)
             # join all types in quotes and spaces
             data[name] = ' '.join(value)
 
@@ -49,26 +57,28 @@ class Heft(object):
             data: dict = json.load(file)
             return data
 
-    @staticmethod
-    def walk_files(folder: Text, consumer: classmethod, pattern: Text = '.*\\.json') -> None:
-        matcher = re.compile(pattern)
+    def walk_files(self, folder: Text, consumer: classmethod) -> None:
         for subdir, dirs, files in os.walk(folder):
             for file in files:
-                if matcher.match(file):
+                if self.matcher.match(file):
                     path: Text = os.path.join(subdir, file)
                     consumer(path)
 
-    def handle_config(self, path) -> None:
+    def handle_config(self, path: Text) -> None:
         config: dict = self.read_file(path)
         self.configs = {**self.configs, **config}
 
-    def handle_theme(self, path) -> None:
+    def handle_theme(self, path: Text) -> None:
         theme: dict = self.read_file(path)
         self.themes = {**self.themes, **theme}
 
+    def handle_style(self, path: Text) -> None:
+        style: dict = self.read_file(path)
+        self.styles = {**self.styles, **style}
+
     def read_configs(self, config: Text, style: Text, theme: Text) -> None:
         self.walk_files(os.path.join('configs', config), self.handle_config)
-        self.walk_files('styles', self.handle_theme, '{}\\.json'.format(style))
+        self.walk_files(os.path.join('styles', style), self.handle_style)
         self.walk_files(os.path.join('themes', theme), self.handle_theme)
         # finished reading themes now extend the themes
         self.themes = dict((theme, self.get_theme(theme)) for theme in self.themes)
@@ -81,7 +91,7 @@ class Heft(object):
             return theme
         # check if this is extending other themes
         # this also removes the extends to prevent further computation of the inheritance
-        extends: Union[Text, list] = theme.pop('extends', None)
+        extends: Union[Text, List] = theme.pop('extends', None)
         if extends is None:
             # no extension just return it
             print('theme "{}" found'.format(name))
@@ -100,24 +110,49 @@ class Heft(object):
         print('theme "{}" found and updated'.format(name))
         return theme
 
-    def generate_filter(self, path: str):
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        self.filter_file = open(path, 'w')
+    def generate_filter(self, path: Text):
+        os.makedirs('dist', exist_ok=True)
+        self.filter_file = open(os.path.join('dist', path + '.filter'), 'w')
+
+        sorted_config: List = sorted(self.configs.items(), key=lambda x: x[1].get('priority', 0))
+        self.write_introduction(sorted_config)
         # sort all configs based on the priority
-        for (chapter, definition) in sorted(self.configs.items(), key=lambda x: x[1].get('priority', 0)):
+        for (chapter, definition) in sorted_config:
             self.write_definitions(chapter, definition)
         self.filter_file.close()
 
+    def write_introduction(self, sorted_config: List):
+        self.write_comment('Generated with HEFTY')
+        # generate the table of content
+        toc: List[List[Text]] = []
+        for (chapter, definition) in sorted_config:
+            priority = definition.get('priority', 0)
+            toc.append(['{:>8}'.format('[[{}]]'.format(priority)), chapter])
+            section_id: int = priority
+            for (name, section) in definition.get('section', {}).items():
+                section_id += 1
+                toc.append(['{:>8}'.format('[{}]'.format(section_id)), name])
+        self.write_comment_header(toc, '*')
+
+    def get_style(self, theme: dict, theme_type: Text, style_type: Text) -> Text:
+        theme_name: Text = theme.get(theme_type)
+        if theme_name is not None:
+            value = self.styles.get(style_type, {}).get(theme_name)
+            if value is not None:
+                # found a value so format it and format it as string
+                return '{:20}{}'.format(Text(value), self.format_comment(theme_name))
+
     def write_definitions(self, chapter: Text, definition: dict) -> None:
+        # TODO build the definition and gather the TOC here too => don't need to iterate twice
         print('generating chapter', '"{}"'.format(chapter))
 
-        filler_length: int = 120
         # header
-        self.write_line(self.format_comment('=' * filler_length))
-        self.write_line(self.format_comment('[[{}]]'.format(definition.get('priority', 0)), chapter))
-        self.write_line(self.format_comment('=' * filler_length))
+        priority = definition.get('priority', 0)
+        self.write_comment_header([['[[{}]]'.format(priority), chapter]], '=')
 
+        section_id: int = priority
         for (name, section) in definition.get('section', {}).items():
+            section_id += 1
             section = {**definition, **section}
             theme = self.themes.get(section.get('theme'))
             if theme is None:
@@ -156,33 +191,29 @@ class Heft(object):
 
             # adding the actions
             actions: dict = dict()
-            self.add_entry(actions, 'SetBorderColor', theme.get('border'))
-            self.add_entry(actions, 'SetTextColor', theme.get('text'))
-            self.add_entry(actions, 'SetBackgroundColor', theme.get('background'))
-            self.add_entry(actions, 'SetFontSize', theme.get('size'))
-            self.add_entry(actions, 'PlayAlertSoundPositional', theme.get('sound'))
-            self.add_entry(actions, 'DisableDropSound', theme.get('dropSound'))
-            self.add_entry(actions, 'MinimapIcon', theme.get('icon'))
-            self.add_entry(actions, 'PlayEffect', theme.get('beam'))
+            self.add_entry(actions, 'SetBorderColor', self.get_style(theme, 'border', 'color'))
+            self.add_entry(actions, 'SetTextColor', self.get_style(theme, 'text', 'color'))
+            self.add_entry(actions, 'SetBackgroundColor', self.get_style(theme, 'background', 'color'))
+            self.add_entry(actions, 'SetFontSize', self.get_style(theme, 'size', 'size'))
+            self.add_entry(actions, 'PlayAlertSoundPositional', self.get_style(theme, 'sound', 'sound'))
+            self.add_entry(actions, 'DisableDropSound', self.get_style(theme, 'dropSound', 'dropSound'))
+            self.add_entry(actions, 'MinimapIcon', self.get_style(theme, 'icon', 'icon'))
+            self.add_entry(actions, 'PlayEffect', self.get_style(theme, 'beam', 'beam'))
 
             if len(actions) == 0 and len(conditions) == 0:
                 print('ignoring, no actions and conditions found')
                 continue
 
             # now write the actual values to the file
-            self.write_line(self.format_comment('-' * filler_length))
-            self.write_line(self.format_comment('{:10}'.format('Section:'), name))
-            self.write_line(self.format_comment('{:10}'.format('Theme:'), section.get('theme')))
-            self.write_line(self.format_comment('-' * filler_length))
+            self.write_comment_header([['{:10}'.format('Section:'), '[{}]'.format(section_id), name],
+                                       ['{:10}'.format('Theme:'), section.get('theme')]], '-')
+
             self.write_line(display)
-
-            self.write_line('\t', self.format_comment('conditions'))
             for (key, value) in conditions.items():
-                self.write_line('\t{:30} {}'.format(key, value))
+                self.write_line('\t{:30}{}'.format(key, value))
 
-            self.write_line('\t', self.format_comment('actions'))
             for (key, value) in actions.items():
-                self.write_line('\t{:30} {}'.format(key, value))
+                self.write_line('\t{:30}{}'.format(key, value))
 
             self.write_line()
 
@@ -192,9 +223,10 @@ if __name__ == '__main__':
     parser.add_argument('--config', help='name of the configuration folder', default='hestalon')
     parser.add_argument('--style', help='name of the style file', default='hestalon')
     parser.add_argument('--theme', help='name of the theme folder', default='hestalon')
+    parser.add_argument('--file', help='name of the resulting file', default='hestalon')
 
     args = parser.parse_args()
 
     gen = Heft()
     gen.read_configs(args.config, args.style, args.theme)
-    gen.generate_filter('dist/hestalon.filter')
+    gen.generate_filter(args.file)

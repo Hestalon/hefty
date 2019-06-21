@@ -1,0 +1,14 @@
+{
+  "Misc., Quest, etc.": {
+    "priority": 900,
+    "section": {
+      "Quest": {
+        "class": [
+          "Quest",
+          "Incursion Item"
+        ],
+        "theme": "quest"
+      }
+    }
+  }
+}

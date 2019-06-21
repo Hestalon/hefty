@@ -1,0 +1,8 @@
+{
+  "quest": {
+    "size": "md",
+    "border": "quest",
+    "background": "neutral-high",
+    "text": "quest"
+  }
+}

@@ -1,13 +1,13 @@
 {
   "Splinter": {
-    "priority": 800,
+    "priority": 6000,
     "class": "Currency",
     "theme": "splinter",
     "section": {
       "Legion": {
-        "type" : "Timeless"
+        "type": "Timeless"
       },
-      "Breach" : {
+      "Breach": {
         "type": "Splinter of"
       }
     }

@@ -1,0 +1,43 @@
+{
+  "color": {
+    "currency": "255 190 20 255",
+    "perandus": "255 180 135 255",
+    "neutral-low": "60 60 60 60",
+    "neutral-medium": "125 125 125 125",
+    "neutral-high": "255 255 255 255",
+    "valuable": "255 0 0 255",
+    "fragment": "130 25 255 255",
+    "prophecy": "160 15 210 50",
+    "fragment-bg": "65 20 80 200",
+    "gem": "0 190 20 255",
+    "unique": "130 70 30 255",
+    "quest": "0 0 100 255",
+    "error": "255 255 255",
+    "error-bg": "255 0 255"
+  },
+  "size": {
+    "xs": 35,
+    "sm": 40,
+    "md": 45,
+    "lg": 50,
+    "xl": 55
+  },
+  "sound": {
+    "currency": "6 300",
+    "map": "4 300",
+    "valuable": "7 300"
+  },
+  "dropSound": {
+    "currency": false
+  },
+  "icon": {
+    "currency": "2 Yellow Circle",
+    "map": "2 White Square",
+    "valuable": "0 Red Star"
+  },
+  "beam": {
+    "currency": "Yellow",
+    "map": "White",
+    "valuable": "Red"
+  }
+}

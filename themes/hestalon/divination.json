@@ -1,7 +1,7 @@
 {
-  "fragment": {
+  "divination": {
     "text": "neutral-high",
-    "background": "fragment",
+    "background": "quest",
     "border": "neutral-high"
   }
 }

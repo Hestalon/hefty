@@ -1,45 +1,35 @@
 {
   "map-t11+": {
-    "extends": [
-      "map-t6+"
-    ],
-    "background": "200 200 200 255"
+    "extends": "map-t6+",
+    "background": "neutral-high"
   },
   "map-t6+": {
-    "extends": [
-      "map-t1+"
-    ],
-    "background": "150 150 150 255"
+    "extends": "map-t1+",
+    "background": "neutral-medium"
   },
   "map-t1+": {
-    "extends": [
-      "map"
-    ],
-    "background": "100 100 100 219"
+    "extends": "map"
   },
   "map-unique": {
-    "extends": [
-      "map"
-    ],
-    "background": "130 70 30 255"
+    "extends": "map",
+    "background": "unique"
   },
   "map-lab": {
-    "extends": [
-      "map"
-    ],
-    "text": "0 0 100 255",
-    "border": "0 0 100 255",
-    "background": "175 175 255 255"
+    "extends": "map",
+    "text": "quest",
+    "border": "quest",
+    "background": "neutral-medium"
   },
   "map-fragment": {
-    "extends": [
-      "map-t6+"
-    ]
+    "extends": "map-t6+",
+    "background": "fragment"
   },
   "map": {
-    "text": "0 0 0 255",
-    "beam": "White",
-    "icon": "2 White Square",
-    "sound": "4 300"
+    "text": "neutral-high",
+    "border": "neutral-high",
+    "background": "neutral-low",
+    "beam": "map",
+    "icon": "map",
+    "sound": "map"
   }
 }

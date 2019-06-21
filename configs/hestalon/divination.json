@@ -1,0 +1,11 @@
+{
+  "Divination": {
+    "priority": 5000,
+    "class": "Divination",
+    "section": {
+      "Divination": {
+        "theme": "divination"
+      }
+    }
+  }
+}

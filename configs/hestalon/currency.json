@@ -1,6 +1,6 @@
 {
   "Currency common": {
-    "priority": 200,
+    "priority": 1000,
     "class": "Currency",
     "section": {
       "T6": {
@@ -74,6 +74,10 @@
           "Portal Scroll",
           "Scroll of Wisdom"
         ]
+      },
+      "Perandus": {
+        "theme": "currency-perandus",
+        "type": "Perandus Coin"
       }
     }
   }
