@@ -2,7 +2,7 @@
   "currency-common-t6": {
     "extends": "currency-common-t5",
     "background": "neutral-high",
-    "sound": "currency",
+    "sound": "currency-high",
     "size": "xl"
   },
   "currency-common-t5": {
@@ -13,6 +13,8 @@
     "background": "neutral-medium",
     "beam": "currency",
     "icon": "currency",
+    "sound": "currency",
+    "dropSound": "currency",
     "size": "lg"
   },
   "currency-common-t3": {
@@ -34,7 +36,6 @@
     "text": "currency",
     "border": "currency",
     "background": "neutral-low",
-    "dropSound": "currency",
     "size": "sm"
   }
 }

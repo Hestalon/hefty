@@ -1,0 +1,21 @@
+{
+  "Crafting bases": {
+    "priority": 4000,
+    "section": {
+      "Elder": {
+        "theme": "crafting",
+        "elder": true
+      },
+      "Shaper": {
+        "theme": "crafting",
+        "shaper": true
+      },
+      "Base": {
+        "theme": "crafting",
+        "rarity": "Normal",
+        "itemLevel": ">= 83",
+        "dropLevel": ">= 60"
+      }
+    }
+  }
+}

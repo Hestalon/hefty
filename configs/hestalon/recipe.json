@@ -1,6 +1,6 @@
 {
   "Recipes": {
-    "priority": 8000,
+    "priority": 7000,
     "section": {
       "6 Link": {
         "theme": "recipe-6link",

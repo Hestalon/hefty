@@ -4,33 +4,50 @@
     "class": "Currency",
     "type": "Prophecy",
     "section": {
-      "T3": {
+      "Prophecy 20+ Chaos": {
         "theme": "prophecy-t3",
         "prophecy": [
           "Fated Connections",
-          "Monstrous Treasure",
           "The Queen's Sacrifice",
-          "Trash to Treasure"
+          "Trash to Treasure",
+          "Wind and Thunder",
+          "The Great Leader of the North",
+          "Monstrous Treasure"
         ]
       },
-      "T2": {
+      "Prophecy 2+ Chaos": {
         "theme": "prophecy-t2",
         "prophecy": [
-          "A Vision of Ice and Fire",
-          "Cleanser of Sins",
-          "Darktongue's Shriek",
-          "The Feral Lord V",
+          "The Great Mind of the North",
+          "The Malevolent Witch",
           "The Jeweller's Touch",
-          "The King's Path",
-          "The Plaguemaw V",
-          "The Unbreathing Queen V",
+          "The Karui Rebellion",
+          "Ancient Doom",
+          "Cleanser of Sins",
           "Twice Enchanted",
+          "A Master Seeks Help",
+          "The Unbreathing Queen V",
           "Unbearable Whispers V",
+          "Blinding Light",
+          "Flesh of the Beast",
+          "Lost in the Pages",
+          "The Plaguemaw V",
           "Vaal Winds",
-          "Wind and Thunder"
+          "The Feral Lord V",
+          "Fire, Wood and Stone",
+          "The Nightmare Awakens",
+          "The Apex Predator",
+          "The Queen's Vaults",
+          "A Prodigious Hand",
+          "Battle Hardened",
+          "Bountiful Traps",
+          "Severed Limbs",
+          "The Bowstring's Music",
+          "The Dreamer's Dream",
+          "The Silverwood"
         ]
       },
-      "T1": {
+      "Remaining": {
         "theme": "prophecy-t1"
       }
     }

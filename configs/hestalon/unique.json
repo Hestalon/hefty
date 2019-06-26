@@ -1,10 +1,135 @@
 {
   "Uniques": {
-    "priority": 7000,
+    "priority": 8000,
     "rarity": "Unique",
-    "theme": "unique",
     "section": {
-      "All Uniques": {
+      "Weapons 1+ Exalted": {
+        "theme": "unique T2",
+        "type": [
+          "Infernal Sword",
+          "Vaal Axe",
+          "Vaal Rapier",
+          "Imperial Bow"
+        ]
+      },
+      "Weapons 10+ Chaos": {
+        "theme": "unique T1",
+        "type": [
+          "Royal Axe",
+          "Prophecy Wand",
+          "Cutlass",
+          "Midnight Blade",
+          "Void Axe",
+          "Gemstone Sword",
+          "Despot Axe",
+          "Legion Sword",
+          "Assassin Bow",
+          "Jewelled Foil",
+          "Maelström Staff",
+          "Royal Bow",
+          "Crystal Wand",
+          "Siege Axe",
+          "Fiend Dagger",
+          "Imperial Skean",
+          "Rusted Sword",
+          "Woodsplitter",
+          "Eternal Sword",
+          "Elegant Sword",
+          "Imperial Maul"
+        ]
+      },
+      "Armour 1+ Exalted": {
+        "theme": "unique T2",
+        "type": [
+          "Triumphant Lamellar",
+          "Two-Point Arrow Quiver",
+          "Golden Buckler",
+          "Vaal Gauntlets",
+          "Ornate Quiver",
+          "Steelscale Gauntlets",
+          "Glorious Plate",
+          "Magistrate Crown",
+          "Crusader Boots",
+          "Rawhide Boots",
+          "Sorcerer Boots",
+          "Ezomyte Tower Shield",
+          "Nubuck Boots",
+          "Vaal Spirit Shield",
+          "Zodiac Leather"
+        ]
+      },
+      "Armour 10+ Chaos": {
+        "theme": "unique T1",
+        "type": [
+          "Blood Raiment",
+          "Carnal Boots",
+          "Nightmare Bascinet",
+          "Murder Boots",
+          "Archon Kite Shield",
+          "Riveted Gloves",
+          "Callous Mask",
+          "Ambush Mitts",
+          "Sacrificial Garb",
+          "Widowsilk Robe",
+          "Golden Plate",
+          "Penetrating Arrow Quiver",
+          "Iron Mask",
+          "Velvet Gloves",
+          "Wyrmscale Doublet",
+          "Full Dragonscale",
+          "Carnal Armour",
+          "Great Crown",
+          "Elegant Ringmail",
+          "Varnished Coat",
+          "Necromancer Circlet",
+          "Legion Gloves",
+          "Blunt Arrow Quiver",
+          "Ebony Tower Shield",
+          "Leather Hood",
+          "Pinnacle Tower Shield",
+          "Reinforced Greaves",
+          "Rawhide Tower Shield",
+          "Goathide Boots",
+          "Jingling Spirit Shield",
+          "Tarnished Spirit Shield"
+        ]
+      },
+      "Accessories 1+ Exalted": {
+        "theme": "unique T2",
+        "type": [
+          "Leather Belt",
+          "Onyx Amulet",
+          "Prismatic Ring",
+          "Jade Amulet",
+          "Two-Stone Ring",
+          "Paua Amulet",
+          "Sapphire Ring",
+          "Ruby Ring",
+          "Amber Amulet",
+          "Topaz Ring",
+          "Chain Belt",
+          "Heavy Belt"
+        ]
+      },
+      "Accessories 10+ Chaos": {
+        "theme": "unique T1",
+        "type": [
+          "Gold Ring",
+          "Unset Ring",
+          "Studded Belt",
+          "Greatwolf Talisman",
+          "Ruby Amulet",
+          "Rustic Sash",
+          "Cloth Belt",
+          "Wereclaw Talisman",
+          "Lapis Amulet",
+          "Gold Amulet",
+          "Moonstone Ring",
+          "Agate Amulet"
+        ]
+      },
+      "Remaining": {
+        "theme": "unique"
       }
     }
   }

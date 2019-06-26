@@ -1,8 +1,16 @@
 {
+  "unique T2": {
+    "extends": "unique T1",
+    "size": "xl"
+  },
+  "unique T1": {
+    "extends": "unique",
+    "size": "lg"
+  },
   "unique": {
     "text": "neutral-high",
     "border": "neutral-high",
     "background": "unique",
-    "size": "lg"
+    "size": "md"
   }
 }

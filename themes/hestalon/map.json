@@ -1,7 +1,8 @@
 {
   "map-t11+": {
     "extends": "map-t6+",
-    "background": "neutral-high"
+    "background": "neutral-high",
+    "text": "valuable"
   },
   "map-t6+": {
     "extends": "map-t1+",
@@ -30,6 +31,7 @@
     "background": "neutral-low",
     "beam": "map",
     "icon": "map",
-    "sound": "map"
+    "sound": "map",
+    "size": "lg"
   }
 }

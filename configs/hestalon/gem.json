@@ -1,9 +1,9 @@
 {
-  "Gems Active": {
+  "Gems": {
     "priority": 4000,
     "class": "Gems",
     "section": {
-      "Gems Drop only valuable": {
+      "Drop only valuable": {
         "theme": "gems-drop-valuable",
         "type": [
           "Empower",
@@ -13,18 +13,18 @@
           "Vaal Breach"
         ]
       },
-      "Gems Drop only": {
+      "Drop only": {
         "theme": "gems-drop",
         "type": [
           "Enhance",
           "Vaal"
         ]
       },
-      "Gems Quality": {
+      "Quality": {
         "theme": "gems-quality",
         "quality": ">= 10"
       },
-      "Active Skill Gems": {
+      "Remaining": {
         "theme": "gems"
       }
     }

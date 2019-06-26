@@ -4,5 +4,13 @@
     "border": "quest",
     "background": "neutral-high",
     "text": "quest"
+  },
+  "chunk": {
+    "size": "xs"
+  },
+  "fallback": {
+    "text": "error",
+    "border": "error",
+    "background": "error-bg"
   }
 }

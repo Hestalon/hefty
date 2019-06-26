@@ -16,14 +16,15 @@
     "error-bg": "255 0 255"
   },
   "size": {
-    "xs": 35,
-    "sm": 40,
-    "md": 45,
-    "lg": 50,
-    "xl": 55
+    "xs": 25,
+    "sm": 30,
+    "md": 35,
+    "lg": 40,
+    "xl": 45
   },
   "sound": {
-    "currency": "6 300",
+    "currency-high": "6 300",
+    "currency": "3 300",
     "map": "4 300",
     "valuable": "7 300"
   },

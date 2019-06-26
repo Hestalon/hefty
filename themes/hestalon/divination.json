@@ -1,7 +1,20 @@
 {
+  "divination t3": {
+    "extends": "divination t2",
+    "size": "lg"
+  },
+  "divination t2": {
+    "extends": "divination t1",
+    "size": "md"
+  },
+  "divination t1": {
+    "extends": "divination",
+    "size": "sm"
+  },
   "divination": {
     "text": "neutral-high",
     "background": "quest",
-    "border": "neutral-high"
+    "border": "neutral-high",
+    "size": "xs"
   }
 }

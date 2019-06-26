@@ -122,7 +122,7 @@ class Heft(object):
         self.filter_file.close()
 
     def write_introduction(self, sorted_config: List):
-        self.write_comment('Generated with HEFTY')
+        self.write_comment('Generated with HEFTY (https://github.com/Hestalon/hefty)')
         # generate the table of content
         toc: List[List[Text]] = []
         for (chapter, definition) in sorted_config:
@@ -138,9 +138,11 @@ class Heft(object):
         theme_name: Text = theme.get(theme_type)
         if theme_name is not None:
             value = self.styles.get(style_type, {}).get(theme_name)
-            if value is not None:
-                # found a value so format it and format it as string
-                return '{:20}{}'.format(Text(value), self.format_comment(theme_name))
+            # no comment, otherwise the filter breaks
+            # if value is not None:
+            #     # found a value so format it and format it as string
+            #     return '{:20}{}'.format(Text(value), self.format_comment(theme_name))
+            return value
 
     def write_definitions(self, chapter: Text, definition: dict) -> None:
         # TODO build the definition and gather the TOC here too => don't need to iterate twice
@@ -154,10 +156,6 @@ class Heft(object):
         for (name, section) in definition.get('section', {}).items():
             section_id += 1
             section = {**definition, **section}
-            theme = self.themes.get(section.get('theme'))
-            if theme is None:
-                print('tried to use theme', '"{}"'.format(section.get('theme')), 'but it\'s not defined')
-                continue
             # by default show it
             display = 'Show' if section.get('show', True) else 'Hide'
 
@@ -191,14 +189,18 @@ class Heft(object):
 
             # adding the actions
             actions: dict = dict()
-            self.add_entry(actions, 'SetBorderColor', self.get_style(theme, 'border', 'color'))
-            self.add_entry(actions, 'SetTextColor', self.get_style(theme, 'text', 'color'))
-            self.add_entry(actions, 'SetBackgroundColor', self.get_style(theme, 'background', 'color'))
-            self.add_entry(actions, 'SetFontSize', self.get_style(theme, 'size', 'size'))
-            self.add_entry(actions, 'PlayAlertSoundPositional', self.get_style(theme, 'sound', 'sound'))
-            self.add_entry(actions, 'DisableDropSound', self.get_style(theme, 'dropSound', 'dropSound'))
-            self.add_entry(actions, 'MinimapIcon', self.get_style(theme, 'icon', 'icon'))
-            self.add_entry(actions, 'PlayEffect', self.get_style(theme, 'beam', 'beam'))
+            theme = self.themes.get(section.get('theme'))
+            if theme is None:
+                print('tried to use theme', '"{}"'.format(section.get('theme')), 'but it\'s not defined')
+            else:
+                self.add_entry(actions, 'SetBorderColor', self.get_style(theme, 'border', 'color'))
+                self.add_entry(actions, 'SetTextColor', self.get_style(theme, 'text', 'color'))
+                self.add_entry(actions, 'SetBackgroundColor', self.get_style(theme, 'background', 'color'))
+                self.add_entry(actions, 'SetFontSize', self.get_style(theme, 'size', 'size'))
+                self.add_entry(actions, 'PlayAlertSoundPositional', self.get_style(theme, 'sound', 'sound'))
+                self.add_entry(actions, 'DisableDropSound', self.get_style(theme, 'dropSound', 'dropSound'))
+                self.add_entry(actions, 'MinimapIcon', self.get_style(theme, 'icon', 'icon'))
+                self.add_entry(actions, 'PlayEffect', self.get_style(theme, 'beam', 'beam'))
 
             if len(actions) == 0 and len(conditions) == 0:
                 print('ignoring, no actions and conditions found')

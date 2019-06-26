@@ -1,6 +1,6 @@
 {
   "Misc., Quest, etc.": {
-    "priority": 900,
+    "priority": 9000,
     "section": {
       "Quest": {
         "class": [
@@ -8,6 +8,34 @@
           "Incursion Item"
         ],
         "theme": "quest"
+      },
+      "Hide chunk": {
+        "theme": "chunk",
+        "class": [
+          "Amulets",
+          "Belts",
+          "Body Armour",
+          "Boots",
+          "Bows",
+          "Claws",
+          "Daggers",
+          "Flask",
+          "Gloves",
+          "Helmets",
+          "Jewel",
+          "One Hand",
+          "Quivers",
+          "Rings",
+          "Sceptre",
+          "Shields",
+          "Staves",
+          "Two Hand",
+          "Wand"
+        ],
+        "show": false
+      },
+      "Fallback": {
+        "theme": "fallback"
       }
     }
   }
