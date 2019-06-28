@@ -18,11 +18,12 @@
     "size": "lg"
   },
   "currency-common-t3": {
-    "extends": "currency-common-t2"
+    "extends": "currency-common-t2",
+    "size": "md"
   },
   "currency-common-t2": {
     "extends": "currency-common-t1",
-    "size": "md"
+    "size": "sm"
   },
   "currency-common-t1": {
     "extends": "currency"
@@ -30,12 +31,13 @@
   "currency-perandus": {
     "extends": "currency",
     "text": "perandus",
-    "border": "perandus"
+    "border": "perandus",
+    "size": "md"
   },
   "currency": {
     "text": "currency",
     "border": "currency",
     "background": "neutral-low",
-    "size": "sm"
+    "size": "xs"
   }
 }

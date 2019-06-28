@@ -4,7 +4,7 @@
     "rarity": "Unique",
     "section": {
       "Weapons 1+ Exalted": {
-        "theme": "unique T2",
+        "theme": "unique-t2",
         "type": [
           "Infernal Sword",
           "Vaal Axe",
@@ -13,7 +13,7 @@
         ]
       },
       "Weapons 10+ Chaos": {
-        "theme": "unique T1",
+        "theme": "unique-t1",
         "type": [
           "Royal Axe",
           "Prophecy Wand",
@@ -39,7 +39,7 @@
         ]
       },
       "Armour 1+ Exalted": {
-        "theme": "unique T2",
+        "theme": "unique-t2",
         "type": [
           "Triumphant Lamellar",
           "Two-Point Arrow Quiver",
@@ -59,7 +59,7 @@
         ]
       },
       "Armour 10+ Chaos": {
-        "theme": "unique T1",
+        "theme": "unique-t1",
         "type": [
           "Blood Raiment",
           "Carnal Boots",
@@ -95,7 +95,7 @@
         ]
       },
       "Accessories 1+ Exalted": {
-        "theme": "unique T2",
+        "theme": "unique-t2",
         "type": [
           "Leather Belt",
           "Onyx Amulet",
@@ -112,7 +112,7 @@
         ]
       },
       "Accessories 10+ Chaos": {
-        "theme": "unique T1",
+        "theme": "unique-t1",
         "type": [
           "Gold Ring",
           "Unset Ring",

@@ -1,23 +1,23 @@
 {
-  "leveling linked": {
+  "leveling-linked": {
     "size": "lg"
   },
-  "leveling socket": {
+  "leveling-socket": {
     "size": "lg"
   },
-  "leveling 51-65": {
-    "extends": "leveling 39-51"
+  "leveling-51-60": {
+    "extends": "leveling-41-51"
   },
-  "leveling 39-51": {
-    "extends": "leveling 26-39"
+  "leveling-41-51": {
+    "extends": "leveling-26-41"
   },
-  "leveling 26-39": {
-    "extends": "leveling 11-26"
+  "leveling-26-41": {
+    "extends": "leveling-11-26"
   },
-  "leveling 11-26": {
-    "extends": "leveling 1-11"
+  "leveling-11-26": {
+    "extends": "leveling-1-11"
   },
-  "leveling 1-11": {
+  "leveling-1-11": {
     "extends": "leveling"
   },
   "leveling": {}

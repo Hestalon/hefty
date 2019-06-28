@@ -1,13 +1,13 @@
 {
-  "prophecy-t3": {
-    "extends": "prophecy-t2",
-    "border": "neutral-high"
-  },
   "prophecy-t2": {
     "extends": "prophecy-t1",
-    "border": "neutral-medium"
+    "border": "neutral-high"
   },
   "prophecy-t1": {
+    "extends": "prophecy",
+    "border": "neutral-medium"
+  },
+  "prophecy": {
     "text": "neutral-high",
     "background": "prophecy",
     "border": "neutral-low"

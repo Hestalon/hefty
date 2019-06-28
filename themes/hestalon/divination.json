@@ -1,13 +1,13 @@
 {
-  "divination t3": {
-    "extends": "divination t2",
+  "divination-t3": {
+    "extends": "divination-t2",
     "size": "lg"
   },
-  "divination t2": {
-    "extends": "divination t1",
+  "divination-t2": {
+    "extends": "divination-t1",
     "size": "md"
   },
-  "divination t1": {
+  "divination-t1": {
     "extends": "divination",
     "size": "sm"
   },

@@ -25,7 +25,7 @@
       "Chromatic leveling": {
         "theme": "recipe-chromatic",
         "socketColors": "RGB",
-        "dropLevel": "<= 65"
+        "itemLevel": "<= 65"
       }
     }
   }

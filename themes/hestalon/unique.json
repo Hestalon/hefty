@@ -1,9 +1,9 @@
 {
-  "unique T2": {
-    "extends": "unique T1",
+  "unique-t2": {
+    "extends": "unique-t1",
     "size": "xl"
   },
-  "unique T1": {
+  "unique-t1": {
     "extends": "unique",
     "size": "lg"
   },

@@ -4,7 +4,7 @@
     "class": "Divination",
     "section": {
       "1+ Exalted": {
-        "theme": "divination t3",
+        "theme": "divination-t3",
         "type": [
           "The Doctor",
           "House of Mirrors",
@@ -22,7 +22,7 @@
         ]
       },
       "10+ Chaos": {
-        "theme": "divination t2",
+        "theme": "divination-t2",
         "type": [
           "Abandoned Wealth",
           "The Iron Bard",
@@ -56,7 +56,7 @@
         ]
       },
       "1+ Chaos": {
-        "theme": "divination t1",
+        "theme": "divination-t1",
         "type": [
           "The Porcupine",
           "Heterochromia",

@@ -3,11 +3,11 @@
     "priority": 9000,
     "section": {
       "Quest": {
+        "theme": "quest",
         "class": [
           "Quest",
           "Incursion Item"
-        ],
-        "theme": "quest"
+        ]
       },
       "Hide chunk": {
         "theme": "chunk",

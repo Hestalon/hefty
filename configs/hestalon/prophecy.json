@@ -5,7 +5,7 @@
     "type": "Prophecy",
     "section": {
       "Prophecy 20+ Chaos": {
-        "theme": "prophecy-t3",
+        "theme": "prophecy-t2",
         "prophecy": [
           "Fated Connections",
           "The Queen's Sacrifice",
@@ -16,7 +16,7 @@
         ]
       },
       "Prophecy 2+ Chaos": {
-        "theme": "prophecy-t2",
+        "theme": "prophecy-t1",
         "prophecy": [
           "The Great Mind of the North",
           "The Malevolent Witch",
@@ -48,7 +48,7 @@
         ]
       },
       "Remaining": {
-        "theme": "prophecy-t1"
+        "theme": "prophecy"
       }
     }
   }

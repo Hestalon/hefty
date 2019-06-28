@@ -13,7 +13,7 @@
       "Base": {
         "theme": "crafting",
         "rarity": "Normal",
-        "itemLevel": ">= 83",
+        "itemLevel": ">= 86",
         "dropLevel": ">= 60"
       }
     }

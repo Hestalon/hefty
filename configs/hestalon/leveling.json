@@ -1,38 +1,53 @@
 {
   "Leveling": {
     "priority": 9000,
-    "itemLevel": "<= 65",
+    "theme": "leveling",
+    "itemLevel": "< 60",
+    "rarity": "Rare",
     "section": {
       "3+ linked items": {
-        "theme": "leveling linked",
+        "theme": "leveling-linked",
         "links": ">= 3"
       },
       "3+ socket items": {
-        "theme": "leveling socket",
+        "theme": "leveling-socket",
         "sockets": ">= 3"
       },
       "51-65": {
-        "theme": "leveling 51-65",
-        "dropLevel": ">= 50"
+        "theme": "leveling-51-60",
+        "dropLevel": ">= 51"
       },
       "39-51": {
-        "theme": "leveling 39-51",
-        "itemLevel": "<= 50",
-        "dropLevel": ">= 38"
+        "theme": "leveling-41-51",
+        "itemLevel": "< 51",
+        "dropLevel": ">= 41"
       },
       "26-39": {
-        "theme": "leveling 26-39",
-        "itemLevel": "<= 38",
-        "dropLevel": ">= 25"
+        "theme": "leveling-26-41",
+        "itemLevel": "< 41",
+        "dropLevel": ">= 26"
       },
       "11-26": {
-        "theme": "leveling 11-26",
-        "itemLevel": "<= 25",
-        "dropLevel": ">= 10"
+        "theme": "leveling-11-26",
+        "itemLevel": "< 26",
+        "dropLevel": ">= 11",
+        "rarity": ">= Magic"
       },
       "1-11": {
-        "theme": "leveling 1-11",
-        "itemLevel": "<= 10"
+        "theme": "leveling-1-11",
+        "itemLevel": "< 11",
+        "rarity": "<= Rare"
+      },
+      "Flasks 37-60": {
+        "itemLevel": "< 60",
+        "dropLevel": ">= 37"
+      },
+      "Flasks 13-37": {
+        "itemLevel": "< 37",
+        "dropLevel": ">= 13"
+      },
+      "Flasks 1-13": {
+        "itemLevel": "< 13"
       }
     }
   }
