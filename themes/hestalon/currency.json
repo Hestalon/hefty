@@ -1,7 +1,6 @@
 {
   "currency-common-t6": {
     "extends": "currency-common-t5",
-    "background": "neutral-high",
     "sound": "currency-high",
     "size": "xl"
   },
@@ -10,7 +9,6 @@
   },
   "currency-common-t4": {
     "extends": "currency-common-t3",
-    "background": "neutral-medium",
     "beam": "currency",
     "icon": "currency",
     "sound": "currency",
@@ -28,16 +26,10 @@
   "currency-common-t1": {
     "extends": "currency"
   },
-  "currency-perandus": {
-    "extends": "currency",
-    "text": "perandus",
-    "border": "perandus",
-    "size": "md"
-  },
   "currency": {
-    "text": "currency",
-    "border": "currency",
-    "background": "neutral-low",
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "currency",
     "size": "xs"
   }
 }

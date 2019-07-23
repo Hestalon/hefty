@@ -1,0 +1,31 @@
+{
+  "quest": {
+    "class": "Quest"
+  },
+  "chunk": {
+    "class": [
+      "Amulets",
+      "Belts",
+      "Body Armour",
+      "Boots",
+      "Bows",
+      "Claws",
+      "Daggers",
+      "Flask",
+      "Gloves",
+      "Helmets",
+      "Jewel",
+      "One Hand",
+      "Quivers",
+      "Rings",
+      "Sceptre",
+      "Shields",
+      "Staves",
+      "Two Hand",
+      "Wand"
+    ]
+  },
+  "fishing-rod": {
+    "class": "Fishing Rod"
+  }
+}

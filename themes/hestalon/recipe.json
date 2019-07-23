@@ -1,17 +1,19 @@
 {
-  "recipe-6link": {
-    "extends": "recipe-6socket",
+  "6link": {
+    "extends": "6socket",
     "sound": "valuable"
   },
-  "recipe-6socket": {
+  "6socket": {
     "text": "valuable",
-    "background": "neutral-high",
     "border": "valuable",
+    "background": "neutral-black",
     "beam": "valuable",
     "icon": "valuable",
     "size": "lg"
   },
-  "recipe-chromatic": {
-    "background": "neutral-low"
+  "chromatic": {
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "crafting"
   }
 }

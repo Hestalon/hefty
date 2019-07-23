@@ -1,0 +1,23 @@
+{
+  "crafting-weapon": {
+    "extends": [
+      "weapon-t1",
+      "crafting"
+    ]
+  },
+  "crafting-armour": {
+    "extends": [
+      "armour-t1",
+      "crafting"
+    ]
+  },
+  "crafting-acc": {
+    "extends": [
+      "acc-t1",
+      "crafting"
+    ]
+  },
+  "crafting": {
+    "itemLevel": ">= 86"
+  }
+}

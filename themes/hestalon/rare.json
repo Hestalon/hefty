@@ -1,0 +1,16 @@
+{
+  "rare-65+": {
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "rare",
+    "size": "md"
+  },
+  "rare-75+": {
+    "extends": "rare-65+",
+    "size": "lg"
+  },
+  "rare-84+": {
+    "extends": "rare-75+",
+    "size": "xl"
+  }
+}

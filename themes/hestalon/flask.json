@@ -5,10 +5,7 @@
   "flask-utility": {
     "extends": "flask"
   },
- "flask": {
-   "size": "md",
-   "text": "neutral-medium",
-   "background": "quest",
-   "border": "none"
- }
+  "flask": {
+    "size": "md"
+  }
 }

@@ -1,15 +1,18 @@
 {
   "unique-t2": {
     "extends": "unique-t1",
-    "size": "xl"
+    "size": "xl",
+    "sound": "unique"
   },
   "unique-t1": {
     "extends": "unique",
-    "size": "lg"
+    "size": "lg",
+    "beam": "unique",
+    "icon": "unique"
   },
   "unique": {
-    "text": "neutral-high",
-    "border": "neutral-high",
+    "text": "neutral-white",
+    "border": "neutral-white",
     "background": "unique",
     "size": "md"
   }

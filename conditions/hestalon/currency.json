@@ -1,0 +1,71 @@
+{
+  "currency": {
+    "class": "Currency"
+  },
+  "currency-common-t6": {
+    "extends": "currency-common-t5",
+    "type": [
+      "Albino Rhoa Feather",
+      "Eternal Orb",
+      "Exalted Orb",
+      "Mirror of Kalandra",
+      "Divine Orb",
+      "Orb of Annulment",
+      "Master Cartographer's Sextant"
+    ]
+  },
+  "currency-common-t5": {
+    "extends": "currency-common-t4",
+    "type": [
+      "Journeyman Cartographer's Sextant",
+      "Chaos Orb",
+      "Gemcutter's Prism",
+      "Orb of Regret",
+      "Regal Orb",
+      "Stacked Deck",
+      "Vaal Orb"
+    ]
+  },
+  "currency-common-t4": {
+    "extends": "currency-common-t3",
+    "type": [
+      "Apprentice Cartographer's Sextant",
+      "Bestiary Orb",
+      "Blessed Orb",
+      "Cartographer's Chisel",
+      "Orb of Alchemy",
+      "Orb of Fusing",
+      "Orb of Scouring"
+    ]
+  },
+  "currency-common-t3": {
+    "extends": "currency-common-t2",
+    "type": [
+      "Silver Coin",
+      "Chromatic Orb",
+      "Glassblower's Bauble",
+      "Jeweller's Orb",
+      "Orb of Alteration",
+      "Orb of Chance"
+    ]
+  },
+  "currency-common-t2": {
+    "extends": "currency-common-t1",
+    "type": [
+      "Alchemy Shard",
+      "Blacksmith's Whetstone",
+      "Orb of Augmentation",
+      "Portal Scroll",
+      "Alteration Shard"
+    ]
+  },
+  "currency-common-t1": {
+    "extends": "currency",
+    "type": [
+      "Orb of Transmutation",
+      "Armourer's Scrap",
+      "Transmutation Shard",
+      "Scroll of Wisdom"
+    ]
+  }
+}

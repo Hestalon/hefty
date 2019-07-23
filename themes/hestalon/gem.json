@@ -1,18 +1,22 @@
 {
-  "gems-drop-valuable": {
-    "extends": "gems-drop"
+  "gem-drop-valuable": {
+    "extends": "gem-drop",
+    "size": "xl",
+    "beam": "valuable",
+    "icon": "valuable"
   },
-  "gems-drop": {
-    "extends": "gems",
-    "background": "neutral-high"
+  "gem-drop": {
+    "extends": "gem",
+    "size": "lg"
   },
-  "gems-quality": {
-    "extends": "gems",
-    "background": "neutral-high"
+  "gem-quality": {
+    "extends": "gem",
+    "size": "lg"
   },
-  "gems": {
-    "text": "gem",
-    "border": "gem",
-    "background": "neutral-low"
+  "gem": {
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "gem",
+    "size": "md"
   }
 }

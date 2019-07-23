@@ -1,0 +1,27 @@
+{
+  "map": {
+    "class": "Maps"
+  },
+  "map-unique": {
+    "extends": "map",
+    "rarity": "Unique"
+  },
+  "map-t1+": {
+    "extends": "map",
+    "tier": ">= 1"
+  },
+  "map-t6+": {
+    "extends": "map-t1+",
+    "tier": ">= 6"
+  },
+  "map-t11+": {
+    "extends": "map-t6+",
+    "tier": ">= 11"
+  },
+  "map-lab": {
+    "class": "Labyrinth"
+  },
+  "map-fragment": {
+    "class": "Map Fragments"
+  }
+}

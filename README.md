@@ -1,11 +1,14 @@
 # Hestalon's Filter Tool in Python (HEFTY)
 HEFTY is a Python3 (>= 3.5) tool to generate loot filter for [Path of Exile](https://www.pathofexile.com).
 The intention is to change only parts of the filter without changing affecting other values, which are defined in JSON files.
+While it can be quite difficult sometimes of foreground and background colors are easy to see, this tool contains a small functionality for it.
+Text and border colors are handled as foreground and checked against the background color, only when these colors are defined.
+An warning will be shown if the contrast ratio is too low.
 
 ## Run
 
 ```text
-# creates the default theme
+# creates the default filter
 ./hefty.py
 # print help
 ./hefty.py --help
@@ -15,32 +18,21 @@ The intention is to change only parts of the filter without changing affecting o
 The valid values of the configuration can be found on the [PoE-Wiki](https://pathofexile.gamepedia.com/Item_filter).
 
 ### Folder: configs
-This folder contains the definition for the filtering.
-Each file is one *chapter* and contains a dedicated header in the resulting Filter later.
-Each chapter must contain a *section*, which has a name and the definition. 
+This folder contains the definition of the filter itself. All folders are different types of filter, while each containing file is a different strictness.
+Currently the best approach is to create one filter and copy it and modify desired sections.
+The top level object is the filter and all containing ones are *chapter*. Each *chapter* can contain multiple *section*, with a different name.
+The *section* can be either an object or a list of objects. All objects in a section can contain configuration values for:
+* show
+* theme
+* condition 
 
-An simple example is the following: 
-```json
-{
-  "Chapter name": {
-    "priority": 900,
-    "section": {
-      "Section name": {
-        "theme": "fallback"
-      }
-    }
-  }
-}
-```
+### Folder: conditions:
+This folder contains the definition for the filtering, the conditions to apply a rule.
+Each file within a folder is going to be read and can contain any object in any order.
+Every object name is also the identifier, which is used in the `configs` and for extending another condition.
 
-All configuration done on *chapter*-level affecting all containing elements on *section*-level, but a *section* is overriding the *chapter*.
-The priority of the chapter configures the ordering in the filter.
-
-Valid configuration in *chapter*:
-* priority
-
-The following configuration can be set in both level:
-* theme (*mandatory*)
+The following values are valid:
+* extends
 * itemLevel
 * dropLevel
 * quality
@@ -67,10 +59,11 @@ The following configuration can be set in both level:
 * shaped
 * tier
 
-## Folder: styles/themes
-Both folders are using the same configuration but the idea is to define e.g. the colors in the style folder, while the theme is using these configurations.
+### Folder: themes
+This folder contains just like the `conditions` the configuration used in the `configs`, but in this case the visuals.
+Values set in these files are referencing the values in the `styles` folder.
 
-Valid style and theme configuration values:
+Valid configuration values:
 * extends
 * border
 * text
@@ -81,20 +74,19 @@ Valid style and theme configuration values:
 * icon
 * beam
 
-An example for the theme example above could be defined like this:
-````json
-{
-  "text-white": {
-    "text": "255 255 255 255"
-  },
-  "background-pink": {
-    "background": "255 0 255"
-  },
-  "fallback": {
-    "extends": ["text-white", "background-pink"]    
-  }
-}
-````
+### Folder: styles
+Styling and keeping the same color in the whole filter can be hard, so this file contains all definitions.
 
-The *extends* value can be either a string or a list of strings, which inheriting all values of the other styles.
-Ordering can be important, the last values can override the values before, while the highest priority still is on the style itself.
+The file can contain the following objects:
+* color
+* size
+* sound
+* dropSound
+* icon
+* beam 
+
+
+## TODO
+* Leveling section
+* Validation of input
+* Chapter/Section generation maybe recursive

@@ -1,0 +1,130 @@
+{
+  "unique": {
+    "rarity": "Unique"
+  },
+  "unique-weapon-t2": {
+    "extends": "unique",
+    "type": [
+      "Infernal Sword",
+      "Vaal Axe",
+      "Vaal Rapier",
+      "Imperial Bow"
+    ]
+  },
+  "unique-weapon-t1": {
+    "extends": "unique",
+    "type": [
+      "Royal Axe",
+      "Prophecy Wand",
+      "Cutlass",
+      "Midnight Blade",
+      "Void Axe",
+      "Gemstone Sword",
+      "Despot Axe",
+      "Legion Sword",
+      "Assassin Bow",
+      "Jewelled Foil",
+      "Maelström Staff",
+      "Royal Bow",
+      "Crystal Wand",
+      "Siege Axe",
+      "Fiend Dagger",
+      "Imperial Skean",
+      "Rusted Sword",
+      "Woodsplitter",
+      "Eternal Sword",
+      "Elegant Sword",
+      "Imperial Maul"
+    ]
+  },
+  "unique-armour-t2": {
+    "extends": "unique",
+    "type": [
+      "Triumphant Lamellar",
+      "Two-Point Arrow Quiver",
+      "Golden Buckler",
+      "Vaal Gauntlets",
+      "Ornate Quiver",
+      "Steelscale Gauntlets",
+      "Glorious Plate",
+      "Magistrate Crown",
+      "Crusader Boots",
+      "Rawhide Boots",
+      "Sorcerer Boots",
+      "Ezomyte Tower Shield",
+      "Nubuck Boots",
+      "Vaal Spirit Shield",
+      "Zodiac Leather"
+    ]
+  },
+  "unique-armour-t1": {
+    "extends": "unique",
+    "type": [
+      "Blood Raiment",
+      "Carnal Boots",
+      "Nightmare Bascinet",
+      "Murder Boots",
+      "Archon Kite Shield",
+      "Riveted Gloves",
+      "Callous Mask",
+      "Ambush Mitts",
+      "Sacrificial Garb",
+      "Widowsilk Robe",
+      "Golden Plate",
+      "Penetrating Arrow Quiver",
+      "Iron Mask",
+      "Velvet Gloves",
+      "Wyrmscale Doublet",
+      "Full Dragonscale",
+      "Carnal Armour",
+      "Great Crown",
+      "Elegant Ringmail",
+      "Varnished Coat",
+      "Necromancer Circlet",
+      "Legion Gloves",
+      "Blunt Arrow Quiver",
+      "Ebony Tower Shield",
+      "Leather Hood",
+      "Pinnacle Tower Shield",
+      "Reinforced Greaves",
+      "Rawhide Tower Shield",
+      "Goathide Boots",
+      "Jingling Spirit Shield",
+      "Tarnished Spirit Shield"
+    ]
+  },
+  "unique-acc-t2": {
+    "extends": "unique",
+    "type": [
+      "Leather Belt",
+      "Onyx Amulet",
+      "Prismatic Ring",
+      "Jade Amulet",
+      "Two-Stone Ring",
+      "Paua Amulet",
+      "Sapphire Ring",
+      "Ruby Ring",
+      "Amber Amulet",
+      "Topaz Ring",
+      "Chain Belt",
+      "Heavy Belt"
+    ]
+  },
+  "unique-acc-t1": {
+    "extends": "unique",
+    "type": [
+      "Gold Ring",
+      "Unset Ring",
+      "Studded Belt",
+      "Greatwolf Talisman",
+      "Ruby Amulet",
+      "Rustic Sash",
+      "Cloth Belt",
+      "Wereclaw Talisman",
+      "Lapis Amulet",
+      "Gold Amulet",
+      "Moonstone Ring",
+      "Agate Amulet"
+    ]
+  }
+}

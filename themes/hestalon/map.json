@@ -1,34 +1,36 @@
 {
   "map-t11+": {
     "extends": "map-t6+",
-    "background": "neutral-high",
-    "text": "valuable"
+    "size": "xl"
   },
   "map-t6+": {
     "extends": "map-t1+",
-    "background": "neutral-medium"
+    "size": "lg"
   },
   "map-t1+": {
     "extends": "map"
   },
   "map-unique": {
-    "extends": "map",
+    "extends": "special-map",
     "background": "unique"
   },
   "map-lab": {
-    "extends": "map",
-    "text": "quest",
-    "border": "quest",
-    "background": "neutral-medium"
+    "extends": "special-map",
+    "background": "quest"
   },
   "map-fragment": {
-    "extends": "map-t6+",
+    "extends": "special-map",
     "background": "fragment"
   },
+  "special-map": {
+    "extends": "map",
+    "text": "neutral-white",
+    "border": "neutral-white"
+  },
   "map": {
-    "text": "neutral-high",
-    "border": "neutral-high",
-    "background": "neutral-low",
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "map",
     "beam": "map",
     "icon": "map",
     "sound": "map",

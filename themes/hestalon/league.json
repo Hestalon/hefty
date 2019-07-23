@@ -1,0 +1,72 @@
+{
+  "delve": {
+    "text": "neutral-white",
+    "border": "neutral-white",
+    "background": "delve",
+    "size": "md"
+  },
+  "essence": {
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "essence",
+    "size": "md"
+  },
+  "legion": {
+    "text": "neutral-white",
+    "border": "neutral-white",
+    "background": "legion",
+    "size": "md"
+  },
+  "breach": {
+    "text": "neutral-white",
+    "border": "neutral-white",
+    "background": "fragment",
+    "size": "md"
+  },
+  "perandus": {
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "perandus",
+    "size": "md"
+  },
+  "prophecy-t2": {
+    "extends": "prophecy-t1",
+    "size": "xl"
+  },
+  "prophecy-t1": {
+    "extends": "prophecy",
+    "size": "lg"
+  },
+  "prophecy": {
+    "text": "neutral-white",
+    "border": "neutral-white",
+    "background": "prophecy",
+    "size": "md"
+  },
+  "harbinger-t2": {
+    "extends": "harbinger-t1",
+    "size": "xl"
+  },
+  "harbinger-t1": {
+    "extends": "harbinger",
+    "size": "lg"
+  },
+  "harbinger": {
+    "text": "neutral-white",
+    "border": "neutral-white",
+    "background": "harbinger",
+    "size": "md"
+  },
+  "incursion": {
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "incursion",
+    "size": "md"
+  },
+  "betrayal": {
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "betrayal",
+    "size": "md"
+  }
+}

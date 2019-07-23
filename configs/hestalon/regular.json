@@ -1,0 +1,323 @@
+{
+  "League": {
+    "Delve": {
+      "theme": "delve",
+      "condition": "delve"
+    },
+    "Essence": {
+      "theme": "essence",
+      "condition": "essence"
+    },
+    "Legion": [
+      {
+        "theme": "legion",
+        "condition": "legion-fragment"
+      },
+      {
+        "theme": "legion",
+        "condition": "legion-incubator"
+      }
+    ],
+    "Breach": {
+      "theme": "breach",
+      "condition": "breach"
+    },
+    "Perandus": {
+      "theme": "perandus",
+      "condition": "perandus"
+    },
+    "Prophecy 20+ Chaos": {
+      "theme": "prophecy-t2",
+      "condition": "prophecy-t2"
+    },
+    "Prophecy 2+ Chaos": {
+      "theme": "prophecy-t1",
+      "condition": "prophecy-t1"
+    },
+    "Prophecy Remaining": {
+      "theme": "prophecy",
+      "condition": "prophecy"
+    },
+    "Harbinger": [
+      {
+        "theme": "harbinger-t2",
+        "condition": "harbinger-t2"
+      },
+      {
+        "theme": "harbinger-t1",
+        "condition": "harbinger-t1"
+      },
+      {
+        "theme": "harbinger",
+        "condition": "harbinger"
+      }
+    ],
+    "Incursion": [
+      {
+        "theme": "incursion",
+        "condition": "incursion-vial"
+      },
+      {
+        "theme": "incursion",
+        "condition": "incursion-item"
+      }
+    ],
+    "Betrayal": {
+      "theme": "betrayal",
+      "condition": "betrayal"
+    }
+  },
+  "Recipe": {
+    "6 Link": {
+      "theme": "6link",
+      "condition": "6link"
+    },
+    "6 Socket": {
+      "theme": "6socket",
+      "condition": "6socket"
+    },
+    "Chromatic": [
+      {
+        "theme": "chromatic",
+        "condition": "chromatic-2x2"
+      },
+      {
+        "theme": "chromatic",
+        "condition": "chromatic-1x3-1x4"
+      },
+      {
+        "theme": "chromatic",
+        "condition": "chromatic-leveling"
+      }
+    ]
+  },
+  "Currency": {
+    "Common T6": {
+      "theme": "currency-common-t6",
+      "condition": "currency-common-t6"
+    },
+    "Common T5": {
+      "theme": "currency-common-t5",
+      "condition": "currency-common-t5"
+    },
+    "Common T4": {
+      "theme": "currency-common-t4",
+      "condition": "currency-common-t4"
+    },
+    "Common T3": {
+      "theme": "currency-common-t3",
+      "condition": "currency-common-t3"
+    },
+    "Common T2": {
+      "theme": "currency-common-t2",
+      "condition": "currency-common-t2"
+    },
+    "Common T1": {
+      "theme": "currency-common-t1",
+      "condition": "currency-common-t1",
+      "show": false
+    },
+    "Remaining": {
+      "theme": "currency",
+      "condition": "currency"
+    }
+  },
+  "Maps": {
+    "Unique": {
+      "theme": "map-unique",
+      "condition": "map-unique"
+    },
+    "Labyrinth": {
+      "theme": "map-lab",
+      "condition": "map-lab"
+    },
+    "Fragments": {
+      "theme": "map-fragment",
+      "condition": "map-fragment"
+    },
+    "T11+": {
+      "theme": "map-t11+",
+      "condition": "map-t11+"
+    },
+    "T6+": {
+      "theme": "map-t6+",
+      "condition": "map-t6+"
+    },
+    "T1+": {
+      "theme": "map-t1+",
+      "condition": "map-t1+"
+    }
+  },
+  "Unique": {
+    "Weapons 1+ Exalted": {
+      "theme": "unique-t2",
+      "condition": "unique-weapon-t2"
+    },
+    "Weapons 10+ Chaos": {
+      "theme": "unique-t1",
+      "condition": "unique-weapon-t1"
+    },
+    "Armour 1+ Exalted": {
+      "theme": "unique-t2",
+      "condition": "unique-armour-t2"
+    },
+    "Armour 10+ Chaos": {
+      "theme": "unique-t1",
+      "condition": "unique-armour-t1"
+    },
+    "Accessories 1+ Exalted": {
+      "theme": "unique-t2",
+      "condition": "unique-acc-t2"
+    },
+    "Accessories 10+ Chaos": {
+      "theme": "unique-t1",
+      "condition": "unique-acc-t1"
+    },
+    "Remaining": {
+      "theme": "unique",
+      "condition": "unique"
+    }
+  },
+  "Crafting": {
+    "Weapon": {
+      "theme": "crafting",
+      "condition": "crafting-weapon"
+    },
+    "Armour": {
+      "theme": "crafting",
+      "condition": "crafting-armour"
+    },
+    "Acc": {
+      "theme": "crafting",
+      "condition": "crafting-acc"
+    }
+  },
+  "Rare Items": {
+    "Shaper 65+": {
+      "theme": "rare-65+",
+      "condition": "rare-shaper-65+"
+    },
+    "Elder 65+": {
+      "theme": "rare-65+",
+      "condition": "rare-elder-65+"
+    },
+    "Acc": [
+      {
+        "theme": "rare-84+",
+        "condition": "rare-acc-84+"
+      },
+      {
+        "theme": "rare-75+",
+        "condition": "rare-acc-75+"
+      },
+      {
+        "theme": "rare-65+",
+        "condition": "rare-acc-65+"
+      }
+    ],
+    "Weapon": [
+      {
+        "theme": "rare-84+",
+        "condition": "rare-weapon-84+"
+      },
+      {
+        "theme": "rare-75+",
+        "condition": "rare-weapon-75+"
+      },
+      {
+        "theme": "rare-65+",
+        "condition": "rare-weapon-65+"
+      }
+    ],
+    "Armour": [
+      {
+        "theme": "rare-84+",
+        "condition": "rare-armour-84+"
+      },
+      {
+        "theme": "rare-75+",
+        "condition": "rare-armour-75+"
+      },
+      {
+        "theme": "rare-65+",
+        "condition": "rare-armour-65+"
+      }
+    ]
+  },
+  "Flasks": {
+    "Quality": {
+      "theme": "flask-quality",
+      "condition": "flask-quality"
+    },
+    "Utility": {
+      "theme": "flask-utility",
+      "condition": "flask-utility"
+    },
+    "Endgame": {
+      "theme": "flask",
+      "condition": "flask-endgame",
+      "show": false
+    }
+  },
+  "Jewel": {
+    "All": {
+      "theme": "jewel",
+      "condition": "jewel"
+    }
+  },
+  "Gems": {
+    "Drop only valuable": {
+      "theme": "gem-drop-valuable",
+      "condition": "gem-drop-valuable"
+    },
+    "Drop only": {
+      "theme": "gem-drop",
+      "condition": "gem-drop"
+    },
+    "Quality": {
+      "theme": "gem-quality",
+      "condition": "gem-quality"
+    },
+    "Remaining": {
+      "theme": "gem",
+      "condition": "gem",
+      "show": false
+    }
+  },
+  "Divination": {
+    "1+ Exalted": {
+      "theme": "divination-t3",
+      "condition": "divination-t3"
+    },
+    "10+ Chaos": {
+      "theme": "divination-t2",
+      "condition": "divination-t2"
+    },
+    "1+ Chaos": {
+      "theme": "divination-t1",
+      "condition": "divination-t1"
+    },
+    "Remaining": {
+      "theme": "divination",
+      "condition": "divination"
+    }
+  },
+  "Misc., Quest, etc.": {
+    "Quest": {
+      "theme": "quest",
+      "condition": "quest"
+    },
+    "Fishing Rod": {
+      "theme": "fishing-rod",
+      "condition": "fishing-rod"
+    },
+    "Chunk": {
+      "theme": "chunk",
+      "condition": "chunk",
+      "show": false
+    },
+    "Fallback": {
+      "theme": "fallback"
+    }
+  }
+}

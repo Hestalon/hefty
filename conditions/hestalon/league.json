@@ -1,0 +1,121 @@
+{
+  "delve": {
+    "extends": "currency",
+    "type": [
+      "Fossil",
+      "Resonator"
+    ]
+  },
+  "essence": {
+    "extends": "currency",
+    "type": [
+      "Essence of",
+      "Remnant of Corruption"
+    ]
+  },
+  "legion-fragment": {
+    "extends": "currency",
+    "type": "Timeless"
+  },
+  "legion-incubator": {
+    "class": "Incubator"
+  },
+  "breach": {
+    "extends": "currency",
+    "type": [
+      "Splinter of",
+      "Blessing of"
+    ]
+  },
+  "perandus": {
+    "extends": "currency",
+    "type": "Perandus Coin"
+  },
+  "prophecy": {
+    "extends": "currency",
+    "type": "Prophecy"
+  },
+  "prophecy-t1": {
+    "extends": "prophecy",
+    "prophecy": [
+      "The Great Mind of the North",
+      "The Malevolent Witch",
+      "The Jeweller's Touch",
+      "The Karui Rebellion",
+      "Ancient Doom",
+      "Cleanser of Sins",
+      "Twice Enchanted",
+      "A Master Seeks Help",
+      "The Unbreathing Queen V",
+      "Unbearable Whispers V",
+      "Blinding Light",
+      "Flesh of the Beast",
+      "Lost in the Pages",
+      "The Plaguemaw V",
+      "Vaal Winds",
+      "The Feral Lord V",
+      "Fire, Wood and Stone",
+      "The Nightmare Awakens",
+      "The Apex Predator",
+      "The Queen's Vaults",
+      "A Prodigious Hand",
+      "Battle Hardened",
+      "Bountiful Traps",
+      "Severed Limbs",
+      "The Bowstring's Music",
+      "The Dreamer's Dream",
+      "The Silverwood"
+    ]
+  },
+  "prophecy-t2": {
+    "extends": "prophecy-t1",
+    "prophecy": [
+      "Fated Connections",
+      "The Queen's Sacrifice",
+      "Trash to Treasure",
+      "Wind and Thunder",
+      "The Great Leader of the North",
+      "Monstrous Treasure"
+    ]
+  },
+  "harbinger": {
+    "extends": "currency",
+    "type": [
+      "Binding Shard",
+      "Engineer's Shard"
+    ]
+  },
+  "harbinger-t1": {
+    "extends": "harbinger",
+    "type": [
+      "Chaos Shard",
+      "Horizon Shard",
+      "Orb of Horizons",
+      "Orb of Binding",
+      "Engineer's Orb",
+      "Regal Shard"
+    ]
+  },
+  "harbinger-t2": {
+    "extends": "harbinger-t1",
+    "type": [
+      "Ancient Shard",
+      "Annulment Shard",
+      "Exalted Shard",
+      "Harbinger's Shard",
+      "Mirror Shard",
+      "Harbinger's Orb",
+      "Ancient Orb"
+    ]
+  },
+  "incursion-vial": {
+    "extends": "currency",
+    "type": "Vial of"
+  },
+  "incursion-item": {
+    "class": "Incursion Item"
+  },
+  "betrayal": {
+    "mod": "Veil"
+  }
+}

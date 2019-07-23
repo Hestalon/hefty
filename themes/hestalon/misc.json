@@ -1,16 +1,26 @@
 {
   "quest": {
     "size": "md",
-    "border": "quest",
-    "background": "neutral-high",
-    "text": "quest"
+    "text": "neutral-white",
+    "border": "neutral-white",
+    "background": "quest"
+  },
+  "fishing-rod": {
+    "size": "xl",
+    "text": "neutral-white",
+    "border": "neutral-white",
+    "background": "unique",
+    "beam": "valuable",
+    "icon": "valuable",
+    "sound": "valuable"
   },
   "chunk": {
     "size": "xs"
   },
   "fallback": {
-    "text": "error",
-    "border": "error",
-    "background": "error-bg"
+    "size": "xs",
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "error"
   }
 }

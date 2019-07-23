@@ -1,0 +1,21 @@
+{
+  "flask": {
+    "class": "Flasks"
+  },
+  "flask-quality": {
+    "extends": "flask",
+    "quality": "> 0"
+  },
+  "flask-utility": {
+    "class": "Utility Flasks"
+  },
+  "flask-endgame": {
+    "extends": "flask",
+    "dropLevel": ">= 60",
+    "type": [
+      "Life Flask",
+      "Mana Flask",
+      "Hybrid Flask"
+    ]
+  }
+}

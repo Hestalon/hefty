@@ -12,9 +12,9 @@
     "size": "sm"
   },
   "divination": {
-    "text": "neutral-high",
-    "background": "quest",
-    "border": "neutral-high",
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "divination",
     "size": "xs"
   }
 }

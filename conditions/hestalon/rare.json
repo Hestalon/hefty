@@ -1,0 +1,165 @@
+{
+  "weapon-t1": {
+    "type": [
+      "Imperial Claw",
+      "Gemini Claw",
+      "Imperial Skean",
+      "Ambusher",
+      "Platinum Kris",
+      "Demon Dagger",
+      "Demon's Horn",
+      "Imbued Wand",
+      "Opal Wand",
+      "Tornado Wand",
+      "Profane Wand",
+      "Corsair Sword",
+      "Eternal Sword",
+      "Jewelled Foil",
+      "Fancy Foil",
+      "Spiraled Foil",
+      "Harpy Rapier",
+      "Siege Axe",
+      "Royal Axe",
+      "Behemoth Mace",
+      "Harbinger Bow",
+      "Judgement Staff",
+      "Exquisite Blade",
+      "Infernal Sword",
+      "Fleshripper",
+      "Vaal Axe",
+      "Coronal Maul",
+      "Sambar Sceptre",
+      "Void Sceptre"
+    ]
+  },
+  "armour-t1": {
+    "type": [
+      "Titan Gauntlets",
+      "Spiked Gloves",
+      "Gripped Gloves",
+      "Slink Gloves",
+      "Sorcerer Gloves",
+      "Fingerless Silk Gloves",
+      "Dragonscale Gauntlets",
+      "Crusader Gloves",
+      "Murder Mitts",
+      "Titan Greaves",
+      "Slink Boots",
+      "Sorcerer Boots",
+      "Dragonscale Boots",
+      "Two-Toned Boots",
+      "Crusader Boots",
+      "Murder Boots",
+      "Astral Plate",
+      "Glorious Plate",
+      "Assassin's Garb",
+      "Vaal Regalia",
+      "Saintly Chainmail",
+      "Sadist Garb",
+      "Eternal Burgonet",
+      "Lion Pelt",
+      "Hubris Circlet",
+      "Nightmare Bascinet",
+      "Praetor Crown",
+      "Bone Helmet",
+      "Vaal Mask",
+      "Deicide Mask",
+      "Colossal Tower Shield",
+      "Pinnacle Tower Shield",
+      "Crusader Buckler",
+      "Imperial Buckler",
+      "Fossilised Spirit Shield",
+      "Harmonic Spirit Shield",
+      "Titanium Spirit Shield",
+      "Cardinal Round Shield",
+      "Elegant Round Shield",
+      "Mosaic Kite Shield",
+      "Archon Kite Shield",
+      "Supreme Spiked Shield",
+      "Broadhead Arrow Quiver",
+      "Penetrating Arrow Quiver",
+      "Spike-Point Arrow Quiver"
+    ]
+  },
+  "acc-t1": {
+    "class": [
+      "Amulets",
+      "Belts",
+      "Rings"
+    ]
+  },
+  "rare-65+": {
+    "itemLevel": ">= 65",
+    "rarity": "Rare"
+  },
+  "rare-75+": {
+    "extends": "rare-65+",
+    "itemLevel": ">= 75"
+  },
+  "rare-84+": {
+    "extends": "rare-65+",
+    "itemLevel": ">= 84"
+  },
+  "rare-acc-65+": {
+    "extends": [
+      "rare-65+",
+      "acc-t1"
+    ]
+  },
+  "rare-acc-75+": {
+    "extends": [
+      "rare-75+",
+      "rare-acc-65+"
+    ]
+  },
+  "rare-acc-84+": {
+    "extends": [
+      "rare-84+",
+      "rare-acc-75+"
+    ]
+  },
+  "rare-weapon-65+": {
+    "extends": [
+      "rare-65+",
+      "weapon-t1"
+    ]
+  },
+  "rare-weapon-75+": {
+    "extends": [
+      "rare-75+",
+      "rare-weapon-65+"
+    ]
+  },
+  "rare-weapon-84+": {
+    "extends": [
+      "rare-84+",
+      "rare-weapon-75+"
+    ]
+  },
+  "rare-armour-65+": {
+    "extends": [
+      "rare-65+",
+      "armour-t1"
+    ]
+  },
+  "rare-armour-75+": {
+    "extends": [
+      "rare-75+",
+      "rare-armour-65+"
+    ]
+  },
+  "rare-armour-84+": {
+    "extends": [
+      "rare-84+",
+      "rare-armour-75+"
+    ]
+  },
+  "rare-shaper-65+": {
+    "extends": "rare-65+",
+    "shaper": true
+  },
+  "rare-elder-65+": {
+    "extends": "rare-65+",
+    "elder": true
+  }
+}

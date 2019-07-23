@@ -1,5 +1,8 @@
 {
   "crafting": {
+    "text": "neutral-black",
+    "border": "neutral-black",
+    "background": "crafting",
     "size": "md"
   }
 }

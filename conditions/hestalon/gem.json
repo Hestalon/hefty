@@ -1,0 +1,26 @@
+{
+  "gem": {
+    "class": "Gems"
+  },
+  "gem-quality": {
+    "extends": "gem",
+    "quality": "> 0"
+  },
+  "gem-drop": {
+    "extends": "gem",
+    "type": [
+      "Enhance",
+      "Vaal"
+    ]
+  },
+  "gem-drop-valuable": {
+    "extends": "gem",
+    "type": [
+      "Empower",
+      "Enlighten",
+      "Item Quantity",
+      "Portal",
+      "Vaal Breach"
+    ]
+  }
+}
