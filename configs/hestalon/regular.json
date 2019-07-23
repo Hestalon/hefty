@@ -193,6 +193,10 @@
     }
   },
   "Rare Items": {
+    "Enchanted": {
+      "theme": "enchanted",
+      "condition": "enchanted"
+    },
     "Shaper 65+": {
       "theme": "rare-65+",
       "condition": "rare-shaper-65+"

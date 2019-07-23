@@ -12,5 +12,14 @@
   "rare-84+": {
     "extends": "rare-75+",
     "size": "xl"
+  },
+  "enchanted": {
+    "text": "valuable",
+    "border": "valuable",
+    "background": "neutral-black",
+    "beam": "valuable",
+    "icon": "valuable",
+    "sound": "valuable",
+    "size": "xl"
   }
 }

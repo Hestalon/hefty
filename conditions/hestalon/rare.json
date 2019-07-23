@@ -161,5 +161,8 @@
   "rare-elder-65+": {
     "extends": "rare-65+",
     "elder": true
+  },
+  "enchanted": {
+    "enchanted": true
   }
 }

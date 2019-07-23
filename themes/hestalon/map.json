@@ -28,8 +28,8 @@
     "border": "neutral-white"
   },
   "map": {
-    "text": "neutral-black",
-    "border": "neutral-black",
+    "text": "neutral-white",
+    "border": "neutral-white",
     "background": "map",
     "beam": "map",
     "icon": "map",
