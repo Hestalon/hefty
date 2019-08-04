@@ -1,5 +1,8 @@
 {
   "jewel": {
+    "text": "neutral-white",
+    "border": "neutral-white",
+    "background": "jewel",
     "size": "md"
   }
 }

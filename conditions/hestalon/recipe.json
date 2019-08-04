@@ -12,10 +12,6 @@
     "width": 1,
     "height": ">= 3"
   },
-  "chromatic-leveling": {
-    "extends": "chromatic",
-    "itemLevel": "<= 65"
-  },
   "6link": {
     "links": 6
   },

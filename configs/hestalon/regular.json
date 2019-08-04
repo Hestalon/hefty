@@ -67,7 +67,11 @@
       "condition": "betrayal"
     }
   },
-  "Recipe": {
+  "Special Section": {
+    "Enchanted": {
+      "theme": "enchanted",
+      "condition": "enchanted"
+    },
     "6 Link": {
       "theme": "6link",
       "condition": "6link"
@@ -75,21 +79,7 @@
     "6 Socket": {
       "theme": "6socket",
       "condition": "6socket"
-    },
-    "Chromatic": [
-      {
-        "theme": "chromatic",
-        "condition": "chromatic-2x2"
-      },
-      {
-        "theme": "chromatic",
-        "condition": "chromatic-1x3-1x4"
-      },
-      {
-        "theme": "chromatic",
-        "condition": "chromatic-leveling"
-      }
-    ]
+    }
   },
   "Currency": {
     "Common T6": {
@@ -148,106 +138,6 @@
       "condition": "map-t1+"
     }
   },
-  "Unique": {
-    "Weapons 1+ Exalted": {
-      "theme": "unique-t2",
-      "condition": "unique-weapon-t2"
-    },
-    "Weapons 10+ Chaos": {
-      "theme": "unique-t1",
-      "condition": "unique-weapon-t1"
-    },
-    "Armour 1+ Exalted": {
-      "theme": "unique-t2",
-      "condition": "unique-armour-t2"
-    },
-    "Armour 10+ Chaos": {
-      "theme": "unique-t1",
-      "condition": "unique-armour-t1"
-    },
-    "Accessories 1+ Exalted": {
-      "theme": "unique-t2",
-      "condition": "unique-acc-t2"
-    },
-    "Accessories 10+ Chaos": {
-      "theme": "unique-t1",
-      "condition": "unique-acc-t1"
-    },
-    "Remaining": {
-      "theme": "unique",
-      "condition": "unique"
-    }
-  },
-  "Crafting": {
-    "Weapon": {
-      "theme": "crafting",
-      "condition": "crafting-weapon"
-    },
-    "Armour": {
-      "theme": "crafting",
-      "condition": "crafting-armour"
-    },
-    "Acc": {
-      "theme": "crafting",
-      "condition": "crafting-acc"
-    }
-  },
-  "Rare Items": {
-    "Enchanted": {
-      "theme": "enchanted",
-      "condition": "enchanted"
-    },
-    "Shaper 65+": {
-      "theme": "rare-65+",
-      "condition": "rare-shaper-65+"
-    },
-    "Elder 65+": {
-      "theme": "rare-65+",
-      "condition": "rare-elder-65+"
-    },
-    "Acc": [
-      {
-        "theme": "rare-84+",
-        "condition": "rare-acc-84+"
-      },
-      {
-        "theme": "rare-75+",
-        "condition": "rare-acc-75+"
-      },
-      {
-        "theme": "rare-65+",
-        "condition": "rare-acc-65+"
-      }
-    ],
-    "Weapon": [
-      {
-        "theme": "rare-84+",
-        "condition": "rare-weapon-84+"
-      },
-      {
-        "theme": "rare-75+",
-        "condition": "rare-weapon-75+"
-      },
-      {
-        "theme": "rare-65+",
-        "condition": "rare-weapon-65+"
-      }
-    ],
-    "Armour": [
-      {
-        "theme": "rare-84+",
-        "condition": "rare-armour-84+"
-      },
-      {
-        "theme": "rare-75+",
-        "condition": "rare-armour-75+"
-      },
-      {
-        "theme": "rare-65+",
-        "condition": "rare-armour-65+"
-      }
-    ]
-  },
   "Flasks": {
     "Quality": {
       "theme": "flask-quality",
@@ -305,6 +195,156 @@
       "theme": "divination",
       "condition": "divination"
     }
+  },
+  "Unique": {
+    "Weapons 1+ Exalted": {
+      "theme": "unique-t2",
+      "condition": "unique-weapon-t2"
+    },
+    "Weapons 10+ Chaos": {
+      "theme": "unique-t1",
+      "condition": "unique-weapon-t1"
+    },
+    "Armour 1+ Exalted": {
+      "theme": "unique-t2",
+      "condition": "unique-armour-t2"
+    },
+    "Armour 10+ Chaos": {
+      "theme": "unique-t1",
+      "condition": "unique-armour-t1"
+    },
+    "Accessories 1+ Exalted": {
+      "theme": "unique-t2",
+      "condition": "unique-acc-t2"
+    },
+    "Accessories 10+ Chaos": {
+      "theme": "unique-t1",
+      "condition": "unique-acc-t1"
+    },
+    "Remaining": {
+      "theme": "unique",
+      "condition": "unique"
+    }
+  },
+  "Rare Items": {
+    "Shaper 65+": {
+      "theme": "rare-65+",
+      "condition": "rare-shaper-65+"
+    },
+    "Elder 65+": {
+      "theme": "rare-65+",
+      "condition": "rare-elder-65+"
+    },
+    "Acc": [
+      {
+        "theme": "rare-84+",
+        "condition": "rare-acc-84+"
+      },
+      {
+        "theme": "rare-75+",
+        "condition": "rare-acc-75+"
+      },
+      {
+        "theme": "rare-65+",
+        "condition": "rare-acc-65+"
+      }
+    ],
+    "Weapon": [
+      {
+        "theme": "rare-84+",
+        "condition": "rare-weapon-84+"
+      },
+      {
+        "theme": "rare-75+",
+        "condition": "rare-weapon-75+"
+      },
+      {
+        "theme": "rare-65+",
+        "condition": "rare-weapon-65+"
+      }
+    ],
+    "Armour": [
+      {
+        "theme": "rare-84+",
+        "condition": "rare-armour-84+"
+      },
+      {
+        "theme": "rare-75+",
+        "condition": "rare-armour-75+"
+      },
+      {
+        "theme": "rare-65+",
+        "condition": "rare-armour-65+"
+      }
+    ]
+  },
+  "Recipe": {
+    "Chromatic": [
+      {
+        "theme": "chromatic",
+        "condition": "chromatic-2x2"
+      },
+      {
+        "theme": "chromatic",
+        "condition": "chromatic-1x3-1x4"
+      }
+    ]
+  },
+  "Crafting": {
+    "Weapon": {
+      "theme": "crafting",
+      "condition": "crafting-weapon"
+    },
+    "Armour": {
+      "theme": "crafting",
+      "condition": "crafting-armour"
+    },
+    "Acc": {
+      "theme": "crafting",
+      "condition": "crafting-acc"
+    }
+  },
+  "Leveling": {
+    "Chromatic": {
+      "theme": "chromatic",
+      "condition": "leveling-recipe-chromatic"
+    },
+    "Socket": [
+      {
+        "condition": "leveling-linked-items"
+      },
+      {
+        "condition": "leveling-socket-items"
+      }
+    ],
+    "Progression Flasks": [
+      {
+        "condition": "leveling-flask-37-60"
+      },
+      {
+        "condition": "leveling-flask-13-37"
+      },
+      {
+        "condition": "leveling-flask-1-13"
+      }
+    ],
+    "Progression": [
+      {
+        "condition": "leveling-51-65"
+      },
+      {
+        "condition": "leveling-39-51"
+      },
+      {
+        "condition": "leveling-26-39"
+      },
+      {
+        "condition": "leveling-11-26"
+      },
+      {
+        "condition": "leveling-1-11"
+      }
+    ]
   },
   "Misc., Quest, etc.": {
     "Quest": {

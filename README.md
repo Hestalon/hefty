@@ -24,7 +24,7 @@ The top level object is the filter and all containing ones are *chapter*. Each *
 The *section* can be either an object or a list of objects. All objects in a section can contain configuration values for:
 * show
 * theme
-* condition 
+* condition
 
 ### Folder: conditions:
 This folder contains the definition for the filtering, the conditions to apply a rule.
@@ -83,11 +83,11 @@ The file can contain the following objects:
 * sound
 * dropSound
 * icon
-* beam 
+* beam
 
 
 ## TODO
 * Leveling section
 * Validation of input
 * Chapter/Section generation maybe recursive
-* missing items with special mods like merciless 
+* missing items with special mods like merciless

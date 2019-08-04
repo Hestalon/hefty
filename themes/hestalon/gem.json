@@ -3,6 +3,7 @@
     "extends": "gem-drop",
     "size": "xl",
     "beam": "valuable",
+    "sound": "valuable",
     "icon": "valuable"
   },
   "gem-drop": {

@@ -1,0 +1,59 @@
+{
+  "leveling": {
+    "itemLevel": "< 65"
+  },
+  "leveling-recipe-chromatic": {
+    "extends": [
+      "leveling",
+      "chromatic"
+    ]
+  },
+  "leveling-linked-items": {
+    "extends": "leveling",
+    "links": ">= 3"
+  },
+  "leveling-socket-items": {
+    "extends": "leveling",
+    "sockets": ">= 3"
+  },
+  "leveling-51-65": {
+    "extends": "leveling-39-51",
+    "itemLevel": "< 65",
+    "dropLevel": ">= 51"
+  },
+  "leveling-39-51": {
+    "extends": "leveling-26-39",
+    "itemLevel": "< 51",
+    "dropLevel": ">= 39"
+  },
+  "leveling-26-39": {
+    "extends": "leveling-26-39",
+    "itemLevel": "< 39",
+    "dropLevel": ">= 26",
+    "rarity": ">= Rare"
+  },
+  "leveling-11-26": {
+    "extends": "leveling-1-11",
+    "itemLevel": "< 26",
+    "dropLevel": ">= 11",
+    "rarity": ">= Magic"
+  },
+  "leveling-1-11": {
+    "extends": "leveling-1-11",
+    "itemLevel": "< 11"
+  },
+  "leveling-flask-37-60": {
+    "extends": "leveling-flask-13-37",
+    "itemLevel": "< 60",
+    "dropLevel": ">= 37"
+  },
+  "leveling-flask-13-37": {
+    "extends": "leveling-flask-1-13",
+    "itemLevel": "< 37",
+    "dropLevel": ">= 13"
+  },
+  "leveling-flask-1-13": {
+    "class": "Flasks",
+    "itemLevel": "< 13"
+  }
+}

@@ -1,11 +1,14 @@
 {
   "divination-t3": {
     "extends": "divination-t2",
-    "size": "lg"
+    "size": "lg",
+    "sound": "valuable"
   },
   "divination-t2": {
     "extends": "divination-t1",
-    "size": "md"
+    "size": "md",
+    "beam": "valuable",
+    "icon": "valuable"
   },
   "divination-t1": {
     "extends": "divination",

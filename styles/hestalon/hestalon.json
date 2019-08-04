@@ -7,9 +7,11 @@
     "valuable": "255 0 0 255",
     "currency": "218 165 32 150",
     "fragment": "50 15 65 150",
-    "gem": "0 190 20 150",
+    "gem": "100 255 100 150",
     "crafting": "125 125 125 150",
     "rare": "255 255 119 150",
+    "jewel": "40 100 30 150",
+    "flask": "100 100 100 150",
     "unique": "130 70 30 150",
     "map": "220 20 60 150",
     "divination": "140 140 220 150",
@@ -51,6 +53,6 @@
     "currency": "Yellow",
     "map": "White",
     "valuable": "Red",
-    "unique": "Green"
+    "unique": "Brown"
   }
 }

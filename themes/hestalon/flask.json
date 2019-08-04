@@ -1,11 +1,16 @@
 {
   "flask-quality": {
-    "extends": "flask"
+    "extends": "flask",
+    "size": "lg"
   },
   "flask-utility": {
-    "extends": "flask"
+    "extends": "flask",
+    "size": "md"
   },
   "flask": {
-    "size": "md"
+    "text": "neutral-white",
+    "border": "neutral-white",
+    "background": "flask",
+    "size": "sm"
   }
 }
