@@ -47,7 +47,8 @@
     "currency": "2 Yellow Circle",
     "map": "2 White Square",
     "valuable": "0 Red Star",
-    "unique": "0 Green Star"
+    "unique": "0 Brown Star",
+    "splinter": "2 Blue Diamond"
   },
   "beam": {
     "currency": "Yellow",

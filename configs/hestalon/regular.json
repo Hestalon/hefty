@@ -138,6 +138,36 @@
       "condition": "map-t1+"
     }
   },
+  "Unique": {
+    "Weapons 1+ Exalted": {
+      "theme": "unique-t2",
+      "condition": "unique-weapon-t2"
+    },
+    "Weapons 10+ Chaos": {
+      "theme": "unique-t1",
+      "condition": "unique-weapon-t1"
+    },
+    "Armour 1+ Exalted": {
+      "theme": "unique-t2",
+      "condition": "unique-armour-t2"
+    },
+    "Armour 10+ Chaos": {
+      "theme": "unique-t1",
+      "condition": "unique-armour-t1"
+    },
+    "Accessories 1+ Exalted": {
+      "theme": "unique-t2",
+      "condition": "unique-acc-t2"
+    },
+    "Accessories 10+ Chaos": {
+      "theme": "unique-t1",
+      "condition": "unique-acc-t1"
+    },
+    "Remaining": {
+      "theme": "unique",
+      "condition": "unique"
+    }
+  },
   "Flasks": {
     "Quality": {
       "theme": "flask-quality",
@@ -194,36 +224,6 @@
     "Remaining": {
       "theme": "divination",
       "condition": "divination"
-    }
-  },
-  "Unique": {
-    "Weapons 1+ Exalted": {
-      "theme": "unique-t2",
-      "condition": "unique-weapon-t2"
-    },
-    "Weapons 10+ Chaos": {
-      "theme": "unique-t1",
-      "condition": "unique-weapon-t1"
-    },
-    "Armour 1+ Exalted": {
-      "theme": "unique-t2",
-      "condition": "unique-armour-t2"
-    },
-    "Armour 10+ Chaos": {
-      "theme": "unique-t1",
-      "condition": "unique-armour-t1"
-    },
-    "Accessories 1+ Exalted": {
-      "theme": "unique-t2",
-      "condition": "unique-acc-t2"
-    },
-    "Accessories 10+ Chaos": {
-      "theme": "unique-t1",
-      "condition": "unique-acc-t1"
-    },
-    "Remaining": {
-      "theme": "unique",
-      "condition": "unique"
     }
   },
   "Rare Items": {

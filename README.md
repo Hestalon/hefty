@@ -87,7 +87,6 @@ The file can contain the following objects:
 
 
 ## TODO
-* Leveling section
 * Validation of input
 * Chapter/Section generation maybe recursive
 * missing items with special mods like merciless

@@ -15,12 +15,14 @@
     "text": "neutral-white",
     "border": "neutral-white",
     "background": "legion",
+    "icon": "splinter",
     "size": "md"
   },
   "breach": {
     "text": "neutral-white",
     "border": "neutral-white",
     "background": "fragment",
+    "icon": "splinter",
     "size": "md"
   },
   "perandus": {
