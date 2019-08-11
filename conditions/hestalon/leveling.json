@@ -12,10 +12,6 @@
     "extends": "leveling",
     "links": ">= 3"
   },
-  "leveling-socket-items": {
-    "extends": "leveling",
-    "sockets": ">= 3"
-  },
   "leveling-51-65": {
     "extends": "leveling-39-51",
     "itemLevel": "< 65",
@@ -27,7 +23,7 @@
     "dropLevel": ">= 39"
   },
   "leveling-26-39": {
-    "extends": "leveling-26-39",
+    "extends": "leveling-11-26",
     "itemLevel": "< 39",
     "dropLevel": ">= 26",
     "rarity": ">= Rare"
@@ -40,7 +36,27 @@
   },
   "leveling-1-11": {
     "extends": "leveling-1-11",
-    "itemLevel": "< 11"
+    "itemLevel": "< 11",
+    "class": [
+      "Amulets",
+      "Belts",
+      "Body Armour",
+      "Boots",
+      "Bows",
+      "Claws",
+      "Daggers",
+      "Gloves",
+      "Helmets",
+      "Jewel",
+      "One Hand",
+      "Quivers",
+      "Rings",
+      "Sceptre",
+      "Shields",
+      "Staves",
+      "Two Hand",
+      "Wand"
+    ]
   },
   "leveling-flask-37-60": {
     "extends": "leveling-flask-13-37",

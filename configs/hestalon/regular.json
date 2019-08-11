@@ -304,6 +304,16 @@
       "condition": "crafting-acc"
     }
   },
+  "Misc., Quest, etc.": {
+    "Quest": {
+      "theme": "quest",
+      "condition": "quest"
+    },
+    "Fishing Rod": {
+      "theme": "fishing-rod",
+      "condition": "fishing-rod"
+    }
+  },
   "Leveling": {
     "Chromatic": {
       "theme": "chromatic",
@@ -312,31 +322,34 @@
     "Socket": [
       {
         "condition": "leveling-linked-items"
-      },
-      {
-        "condition": "leveling-socket-items"
       }
     ],
     "Progression Flasks": [
       {
-        "condition": "leveling-flask-37-60"
+        "condition": "leveling-flask-37-60",
+        "theme": "flask"
       },
       {
-        "condition": "leveling-flask-13-37"
+        "condition": "leveling-flask-13-37",
+        "theme": "flask"
       },
       {
-        "condition": "leveling-flask-1-13"
+        "condition": "leveling-flask-1-13",
+        "theme": "flask"
       }
     ],
     "Progression": [
       {
-        "condition": "leveling-51-65"
+        "condition": "leveling-51-65",
+        "theme": "rare"
       },
       {
-        "condition": "leveling-39-51"
+        "condition": "leveling-39-51",
+        "theme": "rare"
       },
       {
-        "condition": "leveling-26-39"
+        "condition": "leveling-26-39",
+        "theme": "rare"
       },
       {
         "condition": "leveling-11-26"
@@ -346,15 +359,7 @@
       }
     ]
   },
-  "Misc., Quest, etc.": {
-    "Quest": {
-      "theme": "quest",
-      "condition": "quest"
-    },
-    "Fishing Rod": {
-      "theme": "fishing-rod",
-      "condition": "fishing-rod"
-    },
+  "Hiding": {
     "Chunk": {
       "theme": "chunk",
       "condition": "chunk",

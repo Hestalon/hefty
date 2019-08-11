@@ -3,7 +3,8 @@
     "size": "md",
     "text": "neutral-white",
     "border": "neutral-white",
-    "background": "quest"
+    "background": "quest",
+    "beam": "quest"
   },
   "fishing-rod": {
     "size": "xl",

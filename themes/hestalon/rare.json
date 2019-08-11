@@ -1,9 +1,12 @@
 {
-  "rare-65+": {
+  "rare": {
     "text": "neutral-black",
     "border": "neutral-black",
     "background": "rare",
     "size": "md"
+  },
+  "rare-65+": {
+    "extends": "rare"
   },
   "rare-75+": {
     "extends": "rare-65+",
